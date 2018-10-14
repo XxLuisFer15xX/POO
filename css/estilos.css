@@ -161,3 +161,11 @@ p .content-plataforma{
     width:0;
     height:0;
 }
+.rector {
+    width:450px;
+    height: 500px;
+    position: relative;
+    left: 800px;
+    top:-500px;
+    border-radius: 8px;
+}
