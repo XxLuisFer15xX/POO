@@ -59,6 +59,7 @@ header .logotip h1 {
     /*box-shadow: 2px 0px 5px rgba(255, 255, 255, 0.979);*/
     background: rgb(0,36,132);
     float: left;
+    overflow: hidden;
 }
 div .subtitulo{
     float:left;
@@ -92,19 +93,71 @@ div .menu {
 }
 .menu a:hover::after {
     width: 85%;
-    transition: width 0.5s;
+    transition: width 0.3s;
 }
 .menu a:hover {
-    background: rgb(79, 243, 42);
+    background:#93D002; /*rgb(0,247,0);*/
 }
 /*Banner con imagen del rector*/
 .banner {
-    background-color:rgb(79, 243, 42);
+    background-color:#93D002; 
     /*background-color:rgb(36,196,1);*/
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 50px;
-    clear: both;/*baja la parte del banner que estaba en el titulo a abajpo*/
+    clear: both;/*baja la parte del banner que estaba en el titulo a abajo*/
+}
+.banner .banner-wrap {
+    padding: 250px 0px;
+    box-sizing: border-box;
 }
 
+.banner .banner-wrap {
+    position: relative;
+    left:50px;
+    width: 350px;
+    height: 30px;
+    color: white;
+    background: linear-gradient(to left ,rgb(0,36,190),white);
+    border-radius: 51px 51px 51px 51px;
+    -moz-border-radius: 51px 51px 51px 51px;
+    -webkit-border-radius: 51px 51px 51px 51px;
+    border: 0px solid #000000;
+    text-align: center;
+}
+.banner .banner-wrap .links {
+    font-size: 18px;
+    color: white;
+}
 
+.banner .banner-wrap a{
+    color:white;
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgb(0,36,190);
+    font-weight: 600;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+.banner .banner-wrap a:hover{
+    background:#93D002;
+}
+.links  img{
+    left:75px;
+    position: absolute;
+    width: 200px;
+    position: relative;
+    top: -200px; /* ajustar los valores para mover la imagen */
+}
+p .content-plataforma{
+    position: absolute;
+    padding:-200px;
+}
+.links {
+    width:0;
+    height:0;
+}
