@@ -105,6 +105,7 @@ div .menu {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 50px;
+    height: 550px;
     clear: both;/*baja la parte del banner que estaba en el titulo a abajo*/
 }
 .banner .banner-wrap {
@@ -114,11 +115,11 @@ div .menu {
 
 .banner .banner-wrap {
     position: relative;
-    left:50px;
+    left:75px;
     width: 350px;
     height: 30px;
     color: white;
-    background: linear-gradient(to left ,rgb(0,36,190),white);
+    background: linear-gradient(40deg,rgb(0,36,190),white);
     border-radius: 51px 51px 51px 51px;
     -moz-border-radius: 51px 51px 51px 51px;
     -webkit-border-radius: 51px 51px 51px 51px;
@@ -142,6 +143,7 @@ div .menu {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
+    margin-top: 18px;
 }
 .banner .banner-wrap a:hover{
     background:#93D002;
@@ -168,4 +170,5 @@ p .content-plataforma{
     left: 800px;
     top:-500px;
     border-radius: 8px;
+    border: 0px;
 }
