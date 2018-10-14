@@ -79,9 +79,9 @@ div .wrap2 {
     margin-left: 2.7px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 18px;
     color: white;
-    padding: 22.8px 0px;
+    padding: 24.7px 11.4px;
     position: relative;
 
 }
@@ -93,10 +93,10 @@ div .wrap2 {
     bottom:20px;
     width: 0%;/*mismo ancho del padre a*/
     height: 3px;
-    background: white
+    background: white;
 }
 .menu a:hover::after{
-    width: 100%;
+    width: 87%;
     transition: width 0.5s;
 }
 
@@ -118,5 +118,4 @@ div .wrap2 {
     background: rgb(0,36,190);
 
 }
-
 
