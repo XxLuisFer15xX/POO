@@ -56,15 +56,17 @@ header .logotip h1 {
 /*Subencabezado*/
 .wrap2 {
     width: 100%;
+    height: 100px;
     /*box-shadow: 2px 0px 5px rgba(255, 255, 255, 0.979);*/
-    background: #242424;/*rgb(0,36,132);*/
+    /*background: rgba(38,38,38,0.9);rgb(0,36,132);*/
+    background: black;
+    opacity: 0.8;
     float: left;
-    overflow: hidden;
 }
 div .subtitulo{
     float:left;
     font-size: 35px;
-    padding: 15px 0px 15px 50px;
+    padding: 24px 0px 15px 50px;
     color:white;
     margin-left: 45px;
     margin-right: 20px;
@@ -76,7 +78,7 @@ div .menu {
     display:inline-block;
     text-decoration: none;
     font-weight: 500;
-    font-size:18px;
+    font-size:20px;
     color:white;
     position: relative;
     padding: 15px 15px 20px 15px;
@@ -97,7 +99,7 @@ div .menu {
     background: white;
 }
 .menu a:hover {
-    border: 5px solid white;
+    border: 3px solid white;
     border-color:/*#93D002*/white; 
     border-radius: 50px;
 }
@@ -149,7 +151,7 @@ div .menu {
     margin-top: 18px;
 }
 .banner .banner-wrap a:hover{
-    background:rgb(0,36,132);
+    background:#242424;
     border-radius: 8px;
 }
 .links  img{
@@ -175,4 +177,54 @@ p .content-plataforma{
     top:-500px;
     border-radius: 8px;
     border: 0px;
+}
+
+ul,ol {
+    list-style: none;
+}
+.slideshow {
+    width: 100%;
+    position: relative;
+}
+.slider li, ul{
+    width: 100%;
+
+}
+.slider li img {
+    width:100%;
+}
+.paginacion {
+    position: absolute;
+    top:93%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/*Circulos del slider*/
+.paginacion li{
+    font-size: 20px;
+    margin: 2px 5px;
+    color: red;
+    cursor: pointer;
+
+}
+.left {
+    position: absolute;
+}
+/*modificar selectores de flecha*/
+.left1, .right1{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(247, 0, 0);
+    font-size: 50px;
+}
+.left1 {
+    left:10px;
+}
+.right1 {
+    right:10px;
+
 }
