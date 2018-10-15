@@ -40,25 +40,30 @@ $(document).ready(function(){
 		imgPos = numero_circulo;
 	} 
 	function nextSlider(){
-		if( imgPos >= imgitems+1){imgPos = 2;} 
-		else {imgPos++;}
+		if( imgPos >= imgitems){
+			imgPos = 1;
+			
+		}else {
+			imgPos++;
+		}
 
 		$('.paginacion li').css({'color': 'white'});
-		$('.paginacion li:nth-child(' + imgPos +')').css({'color': 'white'});
+		$('.paginacion li:nth-child(' + imgPos +')').css({'color': '#CD6E2E'});
 		$('.slider li').hide(); // Ocultamos todos los slides
-		$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
-
+		$('.slider li:nth-child('+ (imgPos+1) +')').fadeIn(); // Mostramos el Slide seleccionado
 	}
 
-	function prevSlider(){
-		if(imgPos <= 4){imgPos = imgItems;}
-		else{imgPos--;}
-
-		$('.paginacion li').css({'color':'white'})
-		$('.paginacion li:nth-childchild('+ imgPos +')').css({'color':'#CD6E2E'}); 
-		$('.slider li').hide();//esconder las imagenes del slider
-		$('.slider li:nth-child('+ imgPos +')').fadeIn();//mostrar el slider seleccionado
-	}
+	function prevslider(){
+		if(imgPos <= 1){
+			imgPos = imgitems;
+		}else{
+			imgPos--;
+		}
+		$('.paginacion li').css({'color': 'white'});
+		$('.paginacion li:nth-child(' + imgPos +')').css({'color': '#CD6E2E'});
+		$('.slider li').hide(); // Ocultamos todos los slides
+		$('.slider li:nth-child('+ (imgPos+1) +')').fadeIn(); // Mostramos el Slide seleccionado
+	}2
 
 
 });
