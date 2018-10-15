@@ -204,7 +204,7 @@ ul,ol {
 .paginacion li{
     font-size: 20px;
     margin: 2px 5px;
-    color: red;
+    color: rgb(0,36,132);;
     cursor: pointer;
 
 }
@@ -218,11 +218,14 @@ ul,ol {
     height: 100%;
     display: flex;
     align-items: center;
-    color: rgb(247, 0, 0);
+    color: rgb(0,36,132);;
     font-size: 50px;
+
+    cursor: pointer;
 }
 .left1 {
     left:10px;
+
 }
 .right1 {
     right:10px;
