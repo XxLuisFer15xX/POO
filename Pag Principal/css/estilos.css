@@ -41,6 +41,7 @@ header{
     width: 90%;
     max-width: 1366px;
     margin: auto;
+    height: 80px;
 }
 
 .boton-menu{
@@ -66,11 +67,11 @@ header{
 
 .menu li a{
     display: block;
-    padding: 15px;
+    padding: 25px;
     color: #fff;
     text-decoration: none;
     font-family: 'K2D', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 .menu li a:hover{
     background: #FFCC00; 
@@ -101,7 +102,7 @@ footer .wrap{
     color: white;
     background-color:rgb(0,36,132);
     text-shadow: none;
-    height: 400px;
+    height: 408px;
 }
 .logo {
    width: 250px;
