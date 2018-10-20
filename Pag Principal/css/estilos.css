@@ -1,242 +1,97 @@
 *{
-     margin: 0;
-     padding: 0;
-     -webkit-box-sizing: border-box;
-     box-sizing: border-box;
-     -moz-box-sizing: border-box;
- }
- body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
     font-family: 'K2D', sans-serif;
- }
-footer .wrap{
-     color: white;
-     background-color:rgb(0,36,132);
-     text-shadow: none;
-     height: 375px;
-
 }
-.logo {
-    width: 250px;
-    height: 150px;
-}
-.logounah{
-    margin-left: 38%;
-    margin-right: 40%;
-}
-.logopie {
+/*titulos subtitulos e imagen logo unah*/
+header{
     width: 100%;
-    height: 150px;
 }
 
-.parrafo-pie{
-     text-align: center;
-}
-
-.wrap2 {
+.logotipo {
     width: 100%;
+    max-width: 1366px;
     margin: auto;
 }
-header {
-    width: 100%;
-    /*box-shadow: 2px 0px 5px rgba(255, 255, 255, 0.979);*/
-    background: rgb(0,36,132);
-    float: left;
-}
-header img{
-    float: left;
-    padding: 20px 0px;;
 
-}
-header .logotip h1 {
-    float: left;
-    font-size: 40px;
-    color: white;
-    padding: 47px 0px 35px 10px;
-}
-/*Subencabezado*/
-.wrap2 {
-    width: 100%;
-    height: 100px;
-    /*box-shadow: 2px 0px 5px rgba(255, 255, 255, 0.979);*/
-    /*background: rgba(38,38,38,0.9);rgb(0,36,132);*/
-    background: black;
-    opacity: 0.8;
-    float: left;
-}
-div .subtitulo{
-    float:left;
-    font-size: 35px;
-    padding: 24px 0px 15px 50px;
-    color:white;
-    margin-left: 45px;
-    margin-right: 20px;
-}
-div .menu {
-    float:right;
-}
-.menu a{
-    display:inline-block;
-    text-decoration: none;
-    font-weight: 500;
-    font-size:20px;
-    color:white;
-    position: relative;
-    padding: 5px 10px 10px 15px;
-    margin-top: 30px;
-}
-.menu a::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 10px;
-    width: 0%;
-    height: 2px;
-    background: white;
-}
-.menu a:hover::after {
-    width: 85%;
-    transition: width 0.3s;
-    background: white;
-}
-.menu a:hover {
-    border: 2px solid white;
-    border-color:/*#93D002*/white; 
-    border-radius: 40px;
-}
-/*Banner con imagen del rector*/
-.banner {
-    background-color:rgb(0,36,132);
-    /*background-color:rgb(36,196,1);*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom: 20px solid #242424;
-    height: 600px;
-    clear: both;/*baja la parte del banner que estaba en el titulo a abajo*/
-}
-.banner .banner-wrap {
-    padding: 250px 0px;
-    box-sizing: border-box;
-}
-
-.banner .banner-wrap {
-    position: relative;
-    left:75px;
-    width: 350px;
-    height: 30px;
-    color: white;
-    background: linear-gradient(40deg,rgb(0,36,190),white);
-    border-radius: 51px 51px 51px 51px;
-    -moz-border-radius: 51px 51px 51px 51px;
-    -webkit-border-radius: 51px 51px 51px 51px;
-    border: 0px solid #000000;
-    text-align: center;
-}
-.banner .banner-wrap .links {
-    font-size: 18px;
-    color: white;
-}
-
-.banner .banner-wrap a{
-    color:white;
-    display: inline-block;
-    width: 240px;
-    height: 50px;
-    border-radius: 10px;
-    background: rgb(0,36,132);
+.logotipo h1 {
+    font-family: 'K2D', sans-serif;
     font-weight: 600;
-    padding: 12px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 18px;
-    margin-top: 18px;
-}
-.banner .banner-wrap a:hover{
-    background:#242424;
-    border-radius: 8px;
-}
-.links  img{
-    left:75px;
-    position: absolute;
-    width: 200px;
-    position: relative;
-    top: -200px; /* ajustar los valores para mover la imagen */
-}
-p .content-plataforma{
-    position: absolute;
-    padding:-200px;
-}
-.links {
-    width:0;
-    height:0;
-}
-.rector {
-    width:450px;
-    height: 500px;
-    position: relative;
-    left: 800px;
-    top:-500px;
-    border-radius: 12px;
-    border: 0px;
+    color: rgb(0,36,132);
+    padding: 15px 0px;
 }
 
-ul,ol {
+.logotipo h2 {
+    font-family: 'K2D', sans-serif;
+    font-weight: 500;
+    color: rgb(0,36,132);
+}
+
+.navegacion {
+    width: 100%;
+    background: rgb(0,36,132);
+}
+
+.navegacion nav {
+    width: 90%;
+    max-width: 1366px;
+    margin: auto;
+}
+
+.boton-menu{
+    display: none;
+}
+
+.boton-menu span {
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 5px;
+    display: block;
+}
+
+.menu {
     list-style: none;
-}
-.slideshow {
     width: 100%;
-    position: relative;
 }
-.slider li, ul{
-    width: 100%;
 
+.menu li {
+    display: inline-block;
 }
-.slider li img {
-    width:100%;
-}
-.paginacion {
-    position: absolute;
-    top:93%;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-/*Circulos del slider*/
-.paginacion li{
-    font-size: 20px;
-    margin: 2px 5px;
-    color: rgb(0,36,132);;
-    cursor: pointer;
 
+.menu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'K2D', sans-serif;
+    font-size: 18px;
 }
-.left1 {
-    position: absolute;
+.menu li a:hover{
+    background: #FFCC00; 
 }
-/*modificar selectores de flecha*/
-.left1, .right1{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    color: rgb(0,36,132);;
-    font-size: 50px;
-    cursor: pointer;
-}
-.left1 {
-    left:10px;
 
+@media screen and (max-width: 1000px){
+    .boton-menu{
+        width: 90%;
+        display: block;
+        margin: auto;
+        padding: 8px 0px;
+    }
+    .navegacion nav {
+        position: absolute;
+        left: -100%;
+        width: 200px;
+        height: 100%;
+        background: #393939;
+    }
+    .menu li {
+        display: block;
+    }
+     
 }
-.right1 {
-    right:10px;
-}
-div .Articulos_blog {
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box;
-    background: #242424;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    top: 10px;
-}
-/*Slider Responsive*/

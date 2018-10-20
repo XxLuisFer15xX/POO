@@ -1,69 +1,51 @@
 $(document).ready(function(){
-
-	/*para que vallan apareciento los circulos */
-	var imgitems = $('.slider li').length;
-	var imgPos = 1;
-	
-
-	//	console.log(imgitems);
-	/*Ciclo para reproducir circulos*/
-	for(i = 1; i <= imgitems; i++){
-		$('.paginacion').append('<li><span  class = "fa fa-circle"></span></li>');
-	}
-
-	$('.slider li').hide();//oculta los slider
-	$('.slider li:first').show();//muestra el primer slide
-	$('.paginacion li:first').css({'color': '#CD6E2E'});//damos estilo al primer item
-	//funciones para hacer cambio o transision en imagenes para el slider
-	//para cambiar los imagenes para los circulos
-
-	//llamado de funciones
-	$('.paginacion li').click(paginacion);
-	$('.right1 span').click(nextSlider);
-	$('.left1 span').click(prevslider);
-
-	setInterval(function(){
-		nextSlider();
-	},4000);
-
-	//creacion de funciones
-
-	function  paginacion(){
-		var numero_circulo = $(this).index() + 2;
-
-		$('.slider li').hide();
-		$('.slider li:nth-child('+ numero_circulo +')').fadeIn();
-
-		$('.paginacion li').css({'color':'white'});
-		$(this).css({'color':'#CD6E2E'});
-
-		imgPos = numero_circulo;
-	} 
-	function nextSlider(){
-		if( imgPos >= imgitems){
-			imgPos = 1;
-			
+	/* 1)Para tranformar el icon en una x y viceversa y 2)mostrar el contenido dentro de las pestañas */
+	$(".boton-menu span").click(function(e){
+		e.preventDefault();
+		//parte 1
+		if($(".boton-menu span").attr('class') == 'icon icon-align-left'){
+			$(".boton-menu span").removeClass('icon icon-align-left').addClass('icon icon-cancel-circle');
+			//parte 2
+			$(".navegacion nav").animate({left:'0'});
 		}else {
-			imgPos++;
-		}
+			$(".boton-menu span").removeClass('icon icon-cancel-circle').addClass('icon icon-align-left');
+			//parte 2
+			$(".navegacion nav").animate({left:'-100%'});
 
-		$('.paginacion li').css({'color': 'white'});
-		$('.paginacion li:nth-child(' + imgPos +')').css({'color': '#CD6E2E'});
-		$('.slider li').hide(); // Ocultamos todos los slides
-		$('.slider li:nth-child('+ (imgPos+1) +')').fadeIn(); // Mostramos el Slide seleccionado
+		}
+	});
+	//agregando y eliminando clase "nav responsive"
+	var wd = $(window).width();
+	if(wd <= 1000){
+		$(".navegacion na").addClass('nav-responsive')
+	}else{
+		$(".navegacion na").removeClass('nav-responsive')
 	}
 
-	function prevslider(){
-		if(imgPos <= 1){
-			imgPos = imgitems;
+	$(window).resize(function(){
+		var wdi = $(window).width();
+		if(wdi <= 1000){
+			$(".navegacion nav").addClass('nav-responsive')
 		}else{
-			imgPos--;
+			$(".navegacion nav").removeClass('nav-responsive')
+			$(".navegacion nav").css({'position':''})
 		}
-		$('.paginacion li').css({'color': 'white'});
-		$('.paginacion li:nth-child(' + imgPos +')').css({'color': '#CD6E2E'});
-		$('.slider li').hide(); // Ocultamos todos los slides
-		$('.slider li:nth-child('+ (imgPos+1) +')').fadeIn(); // Mostramos el Slide seleccionado
-	}2
+	});
 
+	/*Menu fixed: que permanezca fijo*/
+	var navTop = $('.navegacion').offset().top;
+	var navHeight = $('.navegacion').height();
 
+	$(window).scroll(function(){
+		if($(window).scrollTop() > navTop){
+			$('.navegacion').css({'position':'fixed','top':'0'})
+			$('body').css({'padding-top':navHeight})
+			$('.nav-responsive').css({'position':'fixed'})
+		}else{
+			$('.navegacion').css({'position':'','top':''})
+			$('body').css({'padding-top':'0'})
+			//$('.navegacion nav').css({'position':'fixed'})
+			$('.nav-responsive').css({'position':'absolute'})
+		}
+	});   
 });
