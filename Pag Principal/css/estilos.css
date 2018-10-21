@@ -189,7 +189,6 @@ footer .wrap{
 }
 /*next y previus para navegacion*/
 .flex-direction-nav {
-    
     z-index: 3;
     list-style: none;
 }
@@ -197,7 +196,6 @@ footer .wrap{
 .flex-direction-nav a{
     width: 60px;
     height: 60px;
-    margin-bottom: 5px;
     background: #FFCC00;
     border: 2px solid rgba(255,255,255,0.3);
     border-radius: 5px;
