@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	
+
 	/* 1)Para tranformar el icon en una x y viceversa y 2)mostrar el contenido dentro de las pestañas */
 	$(".boton-menu span").click(function(e){
 		e.preventDefault();
@@ -48,4 +50,14 @@ $(document).ready(function(){
 			$('.nav-responsive').css({'position':'absolute'})
 		}
 	});   
+	/*Codigo para flexSlider*/
+
+	$('.flexslider').flexslider({
+		prevText: "",
+		nextText: "",
+		pauseOnAction: false,
+		slideshowSpeed: 4000
+	});
+	
+
 });
