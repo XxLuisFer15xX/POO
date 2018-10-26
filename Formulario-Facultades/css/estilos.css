@@ -8,7 +8,8 @@
     color: white;
     float: left;
     margin-top: 10px;
-    border: 2px solid #FFCC00;
+    font-weight: 600;
+    -webkit-text-stroke: 2px #FFCC00;
 }
 
 .encabezado a {
@@ -57,6 +58,9 @@ img {
     transform: translateY(100%);
     transition: all 0.5s ease-out;
 }
+.portafolio-img{
+    transition: all 0.5s;
+}
 .portafolio-texto p {
     text-align: justify;  
 }
@@ -64,6 +68,16 @@ img {
     transform: translateY(0%);
 }
 
-.portafolio-item:hover .portafolio-texto
+.portafolio-item:hover .portafolio-img{
+    transform: scale(1.15);
+}
+
+footer {
+    height: 110px;
+}
+footer h2 {
+    color: white;
+    text-align: center;
+}
 
 
