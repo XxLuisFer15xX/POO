@@ -9,7 +9,7 @@
     float: left;
     margin-top: 10px;
     font-weight: 600;
-    -webkit-text-stroke: 2px #FFCC00;
+    -webkit-text-stroke: 1px #FFCC00;
 }
 
 .encabezado a {
@@ -43,7 +43,7 @@ img {
 
 .portafolio-item{
     width: 25%;
-    height: 250px;
+    height: 280px;
     position: relative;
     overflow: hidden;
 }
@@ -79,5 +79,14 @@ footer h2 {
     color: white;
     text-align: center;
 }
-
+/*botones a enlaces*/
+.portafolio-item .portafolio-texto .decoracion  {
+    padding: 5px;
+    border: 1px solid #FFCC00;
+    border-radius: 9px;
+    background: #FFCC00; 
+    color:white;
+    font-size: 20px;
+    text-align: center;
+}
 
