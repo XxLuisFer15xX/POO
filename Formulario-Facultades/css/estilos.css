@@ -3,13 +3,14 @@
     height: 80px;
     margin-bottom:50px;
     
+    
 }
 .encabezado h1 {
     color: white;
     float: left;
     margin-top: 10px;
     font-weight: 600;
-    -webkit-text-stroke: 1px #FFCC00;
+    -webkit-text-stroke: 1px #FFCC00;   
 }
 
 .encabezado a {
@@ -88,5 +89,13 @@ footer h2 {
     color:white;
     font-size: 20px;
     text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .encabezado nav{
+        background-color: black;
+        font-size: 10px;
+        
+    }
 }
 
