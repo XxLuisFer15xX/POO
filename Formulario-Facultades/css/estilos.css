@@ -1,0 +1,101 @@
+.encabezado {
+    background-color: #003399;
+    height: 80px;
+    margin-bottom:50px;
+    
+    
+}
+.encabezado h1 {
+    color: white;
+    float: left;
+    margin-top: 10px;
+    font-weight: 600;
+    -webkit-text-stroke: 1px #FFCC00;   
+}
+
+.encabezado a {
+    color:white;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+    width: 120px;
+    height: 40px;
+    background: #003399;
+    border: 1px  solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.9px;
+}
+
+.encabezado a:hover {
+    background: #FFCC00;
+    color: white;
+}
+img {
+    width: 100%;
+}
+.portafolio {
+    max-width: 1400px;
+    width: 90%;
+    margin:auto;
+}
+
+.portafolio-item{
+    width: 25%;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+.portafolio-texto {
+    position: absolute;
+    bottom: 0;
+    padding:10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 15px;
+    border-radius: 9px;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+}
+.portafolio-img{
+    transition: all 0.5s;
+}
+.portafolio-texto p {
+    text-align: justify;  
+}
+.portafolio-item:hover .portafolio-texto{
+    transform: translateY(0%);
+}
+
+.portafolio-item:hover .portafolio-img{
+    transform: scale(1.15);
+}
+
+footer {
+    height: 110px;
+}
+footer h2 {
+    color: white;
+    text-align: center;
+}
+/*botones a enlaces*/
+.portafolio-item .portafolio-texto .decoracion  {
+    padding: 5px;
+    border: 1px solid #FFCC00;
+    border-radius: 9px;
+    background: #FFCC00; 
+    color:white;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .encabezado nav{
+        background-color: black;
+        font-size: 10px;
+        
+    }
+}
+
