@@ -13,43 +13,14 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+
+/*<=====Header=====>
 body {
     font-family: 'K2D', sans-serif;
 }
 /*titulos subtitulos e imagen logo unah*/
-header{
-    width: 100%;
-}
-
-.logotipo {
-    width: 100%;
-    max-width: 1366px;
-    margin: auto;
-}
-
-.logotipo h1 {
-    font-family: 'K2D', sans-serif;
-    font-weight: 600;
-    color: rgb(0,36,132);
-    padding: 15px 0px;
-}
-
-.logotipo h2 {
-    font-family: 'K2D', sans-serif;
-    font-weight: 500;
-    color: rgb(0,36,132);
-}
-
-.navegacion {
-    width: 100%;
-    background: rgb(0,36,132);
-}
-
-.navegacion nav {
-    width: 90%;
-    max-width: 1366px;
-    margin: auto;
-    height: 80px;
+nav li a{
+    /*background-color: #e7e7e7;*/
 }
 
 .boton-menu{
@@ -67,6 +38,7 @@ header{
 .menu {
     list-style: none;
     width: 100%;
+    top: 20px;
 }
 
 .menu li {
@@ -79,19 +51,14 @@ header{
     color: #fff;
     text-decoration: none;
     font-family: 'K2D', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
 }
 .menu li a:hover{
     background: #FFCC00; 
 }
 
+/*
 @media screen and (max-width: 1000px){
-    .boton-menu{
-        width: 90%;
-        display: block;
-        margin: auto;
-        padding: 8px 0px;
-    }
     .navegacion nav {
         position: absolute;
         left: -100%;
@@ -103,7 +70,7 @@ header{
         display: block;
     }
      
-}
+}*/
 
 /*para el Footer*/
 footer .wrap{
@@ -149,6 +116,7 @@ footer .wrap{
 .slides li img {
     width: 100%;
 }
+
 .slides li {
     margin-bottom: -16px;
 }
