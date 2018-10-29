@@ -2,8 +2,6 @@
     background-color: #003399;
     height: 80px;
     margin-bottom:50px;
-    
-    
 }
 .encabezado h1 {
     color: white;
@@ -99,3 +97,8 @@ footer h2 {
     }
 }
 
+.Fac_inge{
+    width:90%;
+    height: 700px;
+    color:gray;
+}
