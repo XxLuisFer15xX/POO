@@ -14,6 +14,11 @@
     -moz-box-sizing: border-box;
 }
 
+.social-icon a{
+    color: #fff;
+    text-decoration: none;
+}
+
 /*<=====Header=====>
 body {
     font-family: 'K2D', sans-serif;
