@@ -5,6 +5,9 @@
     font-weight: normal;
     font-style: normal;
 }
+body{
+    padding-top: 56px;
+}
 
 *{
     margin: 0;
