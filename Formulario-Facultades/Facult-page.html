@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Facultades UNAH</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/logo.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
+
+    <!--Arvhicos CSS-->
     <link rel="stylesheet" href="../Libreria/css/fontello.css">
     <link rel="stylesheet" href="../Libreria/css/font-awesome.css">
     <link rel="stylesheet" href="../Libreria/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Libreria/css/bootstrap-complements.css">
     <link rel="stylesheet" href="../Libreria/css/estilos.css">
-    <link rel="icon" href="img/logo.ico">
-    <link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!--Arvhicos JS-->
     <script src="../Libreria/js/jquery-3.3.1.min.js"></script>
     <script src="../Libreria/js/jquery.flexslider.js"></script>
     <script src="../Libreria/js/main.js"></script>
@@ -55,110 +60,12 @@
 
 </head>
 <body style = "background: url(img/wap.jpeg); font-family: 'K2D', sans-serif;"><!---->
-    <!--<header class = "row">
-        <div class="container-fluid encabezado">
-            <h1>Facultades:</h1>
-            <a href="../Pag-Principal/index.html" style="text-decoration: none;">Pag Principal</a>
-        </div>
-    </header>-->
+    <!-- Header -->
+    <div id="incluir-header">
 
-
-    <div class="container-fluid" style="margin-top:70px;">
-        <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light">
-            <a class="navbar-brand" href="#">DIIP-UNAH</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-1" aria-controls="navbar-1" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-1">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../Pag-Principal/Index.html">Pagina Principal <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Formularios-Sign-in-Alumnos/Sign-in.html">Primer Ingreso</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sistema de Pregrado
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Sistema de Pregrado</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../Formularios-Sign-in-Alumnos/Sign-in.html">
-                                Alumnos</a>
-                            <a class="dropdown-item" href="../Formularios-Sign-in-catedraticos/Sign-in.html">
-                                Catedráticos</a>
-                            <a class="dropdown-item" href="../Formularios-Sign-in-Coordinadores/Sign-in.html">
-                                Coordinadores</a>
-                            <a class="dropdown-item" href="../Formularios-Sign-in-Jefes-Departamento/Sign-in.html">
-                                Jefes de Departamento</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="../Formulario-Centros-Re/Centros-Regionales.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Centros de Estudio
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../Formulario-Centros-Re/Centros-Regionales.html">Centros de Estudio</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../Formulario-Centros-Re/UNAH-TEC_Danli.html">
-                                UNAH-TEC Danli</a>
-                            <a class="dropdown-item" href="../Formulario-Centros-Re/UNAH-VS.html">
-                                UNAH-VS</a>
-                            <a class="dropdown-item" href="../Formulario-Centros-Re/UNAH-TEC_AGUAN.html">
-                                UNAH-TEC AGUÁN</a>
-                            <a class="dropdown-item" href="../Formulario-Centros-Re/UNAH-CURC.html">
-                                UNAH-CURC</a>
-                            <a class="dropdown-item" href="../Formulario-Centros-Re/UNAH-CURLA.html">
-                                UNAH-CURLA</a>
-                            <a class="dropdown-item" href="../Formulario-Centros-Re/UNAH-CURLP.html">
-                                UNAH-CURLP</a>
-                            <a class="dropdown-item" href="../Formulario-Centros-Re/UNAH-CUROC.html">
-                                UNAH-CUROC</a>
-                            <a class="dropdown-item" href="../Formulario-Centros-Re/UNAH-CURNO.html">
-                                UNAH-CURNO</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="../Formulario-Facultades/Facult-page.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Facultades
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../Formulario-Facultades/Facult-page.html">
-                                Facultades</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../Formulario-Facultades/Ciencia-Social.html">
-                                Ciencias Sociales</a>
-                            <a class="dropdown-item" href="../Formulario-Facultades/.html">
-                                Química y Farmacia</a>
-                            <a class="dropdown-item" href="../Formulario-Facultades/.html">
-                                Odontología</a>
-                            <a class="dropdown-item" href="../Formulario-Facultades/.html">
-                                Ciencias Jurídicas</a>
-                            <a class="dropdown-item" href="../Formulario-Facultades/Ingenieria.html">
-                                Ingeniería</a>
-                            <a class="dropdown-item" href="../Formulario-Facultades/.html">
-                                Humanidades y Artes</a>
-                            <a class="dropdown-item" href="../Formulario-Facultades/Ciencia-Espacial.html">
-                                Ciencias Espaciales</a>
-                            <a class="dropdown-item" href="../Formulario-Facultades/.html">
-                                Ciencias Económicas, Administrativas y Contables</a>
-                            <a class="dropdown-item" href="../Formulario-Facultades/Ciencia.html">
-                                Ciencias</a>
-                            <a class="dropdown-item" href="../Formulario-Facultades/Ciencias-Medica.html">
-                                Ciencias Médicas</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
     </div>
 
-
+    <!-- Contenido -->
     <div class="container portafolio">
         <div class = "row">
             <section class = "portafolio-item col-xl-3 col-lg-3 col-md-6  col-sm-12 portafolio-img">
@@ -275,15 +182,12 @@
         </div>
     </div>
     
+    <!-- Footer -->
+    <div id="incluir-footer">
 
-
-    <footer class = "container-fluid" style="background:#003399;">
-        <div class = "row">
-            <div style="text-align:center;" class = "col-md-12 col-sm-12 col-12">
-                <h2 style="font-size:40px;">Visitanos</h2>
-            </div>   
-        </div>  
-    </footer>
+    </div>
+  
+    <!--Arvhicos JavaScript-->
     <script src="../Libreria/js/jquery-latest.js"></script>
     <script src="../Libreria/js/bootstrap.min.js"></script>
     <script src="../Libreria/header.js"></script>
