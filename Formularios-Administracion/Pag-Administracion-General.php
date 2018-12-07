@@ -1,3 +1,8 @@
+<?php 
+    session_start();  
+    if (!isset($_SESSION["usuario"]))
+        header("Location:no-autorizado.html");//Redireccion con PHP
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,7 +127,7 @@
                 <p>
                     Cierra tu cuenta para no permitir que quede expuesta tu informacion y cambios realizados por ti.
                 </p>
-                <p style = "margin-top: 15px;"><a class="btn btn-secondary" href="#" role="button">Cerrar Sesion</a></p>
+                <p style = "margin-top: 15px;"><a class="btn btn-secondary" href="exit.php" role="button">Cerrar Sesion</a></p>
             </div>
           </div>
     </div>
