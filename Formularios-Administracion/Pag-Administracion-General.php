@@ -103,7 +103,7 @@
                 <p>
                     En este apartado podra Eliminar una seccion correspondiente a una asignatura especifica que tenga algun inconveniente ya sea por que no se cumple con los requisitos o por orden de Administracion.
                 </p>
-                <p style = "margin-top: 15px;"><a class="btn btn-secondary" href="#" role="button">Registro de Solicitudes</a></p>
+                <p style = "margin-top: 15px;"><a class="btn btn-secondary" href="formulario.php" role="button">Registro de Solicitudes</a></p>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" style = "text-align:center;">
                 <h2>Matricular Alumno</h2>

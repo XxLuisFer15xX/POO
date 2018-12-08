@@ -1,0 +1,119 @@
+*{
+	 box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	padding: 0px;  
+	font-family: 'Abel', sans-serif;
+	background-image: url("../img/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        margin-bottom: 150px;
+}
+.content-form {
+       /*background-image: linear-gradient(
+       	200deg, 
+        rgba(0, 36, 132, 0.6) 30%, 
+        
+           rgba(0, 0, 0, 0.6) 99%);*/
+           background-color: /*rgb(237, 247, 250);*/#127CBD;
+    color: #fff;
+    margin-top: 0;
+    overflow: auto;
+    padding: 0px 5px;
+    width: 768px;
+    margin: auto;
+    border-radius: 10px;
+}
+.sub-title {
+        text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 10px auto;
+}
+.sub-title:after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background:rgb(0,36,132);
+    display: block;
+    margin: auto;
+}
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgba(13, 60, 115, 0.36);
+    margin-bottom: 5px;
+    text-align: center;
+} 
+.sub-form {
+    width: 100%;
+    background: rgb(0,36,132);
+    text-align: left;
+    padding: 5px 5px;
+    color: #fff;
+}
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.width-4 {
+    width: 33.3%;
+}
+.width-6 {
+    width: 50%;
+}
+.width-12{
+	width: 100%;
+}
+.btn {
+    background: rgb(0,36,132);
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid rgb(0,36,132);
+    border-radius: 5px;
+        width: 150px;
+}
+.btn:hover {
+    background: #127CBD;
+    border: 1px solid #127CBD;
+    cursor: pointer;
+}
+footer{
+	    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.derechos {
+    background: rgba(0, 0, 0, 0.72);
+    padding: 15px 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+}
+.derechos a {
+    color: #0ad0ff;
+}
+@media (max-width: 768px){
+.content-form {
+        width: 100%; 
+            border-radius: 0px;
+}
+.width-6 {
+    width: 100%;
+}
+.btn {
+    
+        width: 100%;
+}
+ 
+}
