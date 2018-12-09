@@ -111,7 +111,7 @@
                 <p>
                     En esta seccion podra Matricular a un alumno de primer ingreso para que de esta manera empiece su nueva historia en la Universidad como pasante de X carrera.
                 </p>
-                <p style = "margin-top: 15px;"><a class="btn btn-secondary" href="#" role="button">Matricula Alumno</a></p>
+                <p style = "margin-top: 15px;"><a class="btn btn-secondary" href="formulario-registro-alumno.php" role="button">Matricula Alumno</a></p>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" style = "text-align:center;">
                 <h2>Despido de Personal</h2>

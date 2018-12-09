@@ -12,8 +12,10 @@
         protected $fecha_ingreso;
         protected $jerarquia;
         protected $No_Cuenta;
+        protected $centro;
+        protected $carrera;
 
-        public function __construct($nombre=null,$apellido=null,$direccion=null,$ID=null,$telefono=null,$edad=null,$correo=null,$password=null,$sexo=null,$estado_civil=null,$fecha_ingreso=null,$jerarquia=null,$No_Cuenta=null){
+        public function __construct($nombre=null,$apellido=null,$direccion=null,$ID=null,$telefono=null,$edad=null,$correo=null,$password=null,$sexo=null,$estado_civil=null,$fecha_ingreso=null,$jerarquia=null,$No_Cuenta=null,$centro=null,$carrera=null){
             $this->nombre=$nombre;
             $this->apellido=$apellido;
             $this->direccion=$direccion;
@@ -27,6 +29,8 @@
             $this->fecha_ingreso=$fecha_ingreso;
             $this->jerarquia=$jerarquia;
             $this->No_Cuenta=$No_Cuenta;
+            $this->centro=$centro;
+            $this->carrera=$carrera;
 
             
         }
@@ -107,7 +111,19 @@
         }
         public function setID($ID){
             $this->No_Cuenta=$ID;
-        }   
+        }  
+        public function getcentro(){
+            return $this->centro;
+        }
+        public function setcentro($centro){
+            $this->centro=$centro;
+        }  
+        public function getcarrera(){
+            return $this->carrera;
+        }
+        public function setcarrera($carrera){
+            $this->carrera=$carrera;
+        } 
         public function Registrar_Persona(){
             $archivo = fopen("../data/registro_persona.json","a+");
             $arreglo = array();
@@ -129,7 +145,7 @@
             return json_encode($arreglo);
         }
         public function __toString(){
-            return "$this->nombre,$this->apellido,$this->direccion,$this->ID,$this->telefono,$this->edad,$this->correo,$this->password,$this->estado_civil,$this->fecha_ingreso,$this->sexo,$this->jerarquia,$this->No_Cuenta";
+            return "$this->nombre,$this->apellido,$this->direccion,$this->ID,$this->telefono,$this->edad,$this->correo,$this->password,$this->estado_civil,$this->fecha_ingreso,$this->sexo,$this->jerarquia,$this->No_Cuenta,$this->centro,$this->carrera";
         }
     }
 ?>

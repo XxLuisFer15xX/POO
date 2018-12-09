@@ -3,9 +3,8 @@
 }
 body{
 	margin: 0px;
-	padding: 0px;  
+    padding: 0px;  
 	font-family: 'Abel', sans-serif;
-	background-image: url("../img/fondo2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -15,7 +14,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-        margin-bottom: 150px;
+    margin-bottom: 150px;
 }
 .content-form {
        /*background-image: linear-gradient(
@@ -166,7 +165,7 @@ footer{
     content: "\f00d";
     font-family: FontAwesome;
     display: inline-block;
-    color: rgb(0,36,132);
+    color: rgba(255, 0, 0, 0.671);
     margin-right: 8px;
 }
 #btnClose{
@@ -174,9 +173,9 @@ footer{
 	padding: 3px 10px;
 	margin-top: 10px;
 
-	background:rgb(0,36,132);
+	background:rgba(255, 0, 0, 0.671);
 	color: #fff;
-	border: 2px solid rgb(0,36,132);
+	border: 2px solid rgba(255, 0, 0, 0.671);
 	cursor: pointer;
 
 	float: right;
