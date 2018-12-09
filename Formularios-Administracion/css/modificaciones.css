@@ -166,7 +166,7 @@ footer{
     content: "\f00d";
     font-family: FontAwesome;
     display: inline-block;
-    color: #E25151;
+    color: rgb(0,36,132);
     margin-right: 8px;
 }
 #btnClose{
@@ -174,9 +174,9 @@ footer{
 	padding: 3px 10px;
 	margin-top: 10px;
 
-	background: #E25151;
+	background:rgb(0,36,132);
 	color: #fff;
-	border: 2px solid #B14141;
+	border: 2px solid rgb(0,36,132);
 	cursor: pointer;
 
 	float: right;

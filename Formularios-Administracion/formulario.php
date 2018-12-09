@@ -136,7 +136,7 @@
 				</div>
 				<div class="width-12">
 						<h3 class="sub-form" style="text-align: center;">Numero de Cuenta Generado</h3>
-						<input type="text" nombre="No_Cuenta" class="form-control" id="No_Cuenta" value="<?php echo generarCodigo(1)?>"/> 
+						<input readonly="readonly" type="text" nombre="No_Cuenta" class="form-control" id="No_Cuenta" value="<?php echo generarCodigo(1)?>"/> 
 				</div>
 
 				<div class="form-group width-12">
@@ -192,7 +192,7 @@
 										'<p>Numero de Usuario: </p>'+$('#nombre').val()+
 										'<p>Contraseña: : </p>'+$('#password').val()+
 										'<h3>Bienvenido A La Universidad Nacional Autonoma de Honduras</h3>'+
-                                        '<span id="btnClose">Cerrar</span>'+
+                                        '<span id="btnClose">Finalizar</span>'+
                                     '</div>'+
                                 '</div>'
 
@@ -200,7 +200,7 @@
         	}
 			// CERRANDO MODAL ==============================
 			$('#btnClose').click(function(){
-				$('.modal_wrap').remove();	
+				window.location.href = "formulario.php";
 			});	
 		});
 		
