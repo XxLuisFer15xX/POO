@@ -9,6 +9,7 @@ class Alumno extends Persona{
         $archivo = fopen("../data/registro_alumno.json","a+");
         $arreglo = array();
         $arreglo["No_Cuenta"]=$this->No_Cuenta;
+        $arreglo["password"]=$this->password;
         $arreglo["jerarquia"]=$this->jerarquia;
         $arreglo["centro"]=$this->centro;
         $arreglo["carrera"]=$this->carrera;

@@ -37,9 +37,9 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-  background: #3051cc;
-  background: -webkit-linear-gradient(top left, #3051cc 0%, #3051cc 100%);
-  background: linear-gradient(to bottom right, #3051cc 0%, #3051cc 100%);
+  background: rgba(0,36,132);
+  background: -webkit-linear-gradient(top left, rgba(0,36,132) 0%, rgba(0,36,132) 100%);
+  background: linear-gradient(to bottom right, rgba(0,36,132) 0%, rgba(0,36,132)/*#3051cc*/ 100%);
   position: absolute;
   left: 0;
   width: 100%;
@@ -96,17 +96,18 @@ form input:hover {
 form input:focus {
   background-color: white;
   width: 300px;
-  color: #3051cc;
+  color: rgba(0,36,132);
 }
 form button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   outline: 0;
-  background-color: white;
-  border: 0;
+  background-color: rgb(0,36,125);
+  border: 1px solid #fff;
   padding: 10px 15px;
-  color: #3051cc;
+  color: white;
+  font-weight: 650;
   border-radius: 3px;
   width: 250px;
   cursor: pointer;
@@ -115,7 +116,7 @@ form button {
           transition-duration: 0.25s;
 }
 form button:hover {
-  background-color: #f5f7f9;
+  background-color: #FFCC00;
 }
 .bg-bubbles {
   position: absolute;

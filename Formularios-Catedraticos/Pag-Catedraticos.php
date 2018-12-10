@@ -1,3 +1,8 @@
+<?php 
+    session_start();  
+    if (!isset($_SESSION["No_Cuenta"]))
+        header("Location:no-autorizado.html");//Redireccion con PHP
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,6 +72,19 @@
 
     <!-- Contenido -->
     <div class = "container">
+        <hr style="border:2px solid rgb(0,36,132);">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <img src="img/imagen_catedratico.png" alt="" style="width:200px;">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <h2>Datos Personales:</h2>
+                <div id="mostrar_datos">
+  
+                </div>
+            </div>
+        </div>
+        <hr style="border:2px solid rgb(0,36,132);">
         <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" style = "text-align:center;">
               <h2>Lista de Secciones</h2>
@@ -92,7 +110,7 @@
                 <p>
                     Cierra tu cuenta para no permitir que quede expuesta tu informacion y cambios realizados por ti.
                 </p>
-                <p style = "margin-top: 15px;"><a class="btn btn-secondary" href="#" role="button">Cerrar Sesion</a></p>
+                <p style = "margin-top: 15px;"><a class="btn btn-secondary" href="exit.php" role="button">Cerrar Sesion</a></p>
             </div>
           </div>
     </div>

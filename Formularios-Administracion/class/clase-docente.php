@@ -9,7 +9,10 @@ class Docencia extends Persona{
     public function Habilitar_Docente(){
         $archivo = fopen("../data/registro_docente.json","a+");
         $arreglo = array();
+        $arreglo["nombre"]=$this->nombre;
+        $arreglo["apellido"]=$this->apellido;
         $arreglo["No_Cuenta"]=$this->No_Cuenta;
+        $arreglo["password"]=$this->password;
         $arreglo["jerarquia"]=$this->jerarquia;
         fwrite($archivo, json_encode($arreglo) . "\n");
         fclose($archivo);
