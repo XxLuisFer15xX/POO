@@ -88,8 +88,8 @@
                             while(($linea = fgets($archivo))){
                                 $registro = json_decode($linea,true);
                                 if ($valor == $registro["No_Cuenta"]){
-                                    echo    '<p><b>Nombre:     </b>'.$registro['nombre'].'</p><hr style="border: 1.2px solid #FFCC00;">
-                                             <p><b>Apellido:   </b>'.$registro['apellido'].'</p><hr style="border: 1.2px solid #FFCC00;">
+                                    echo    '<p><b>Nombres:     </b>'.$registro['nombre'].'</p><hr style="border: 1.2px solid #FFCC00;">
+                                             <p><b>Apellidos:   </b>'.$registro['apellido'].'</p><hr style="border: 1.2px solid #FFCC00;">
                                              <p><b>Numero de Cuenta:     </b>'.$registro['No_Cuenta'].'</p><hr style="border: 1.2px solid #FFCC00;">
                                              <p><b>Cargo:      </b>'.$registro["jerarquia"].'</p><hr style="border: 1.2px solid #FFCC00;">
                                             ';  

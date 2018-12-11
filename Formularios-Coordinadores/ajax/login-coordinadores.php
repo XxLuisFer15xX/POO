@@ -5,7 +5,7 @@ session_start();
         $registro=json_decode($linea,true);
         if(
             $_POST["No_Cuenta"]==$registro["No_Cuenta"]&&
-            $_POST["password"]==$registro["password"] && $registro["jerarquia"]=="Catedratico"
+            $_POST["password"]==$registro["password"] && $registro["jerarquia"]=="Coordinador"
         ){
             $registro["estatus"]="1";
             $registro["mensaje"]="Acceso autorizado";

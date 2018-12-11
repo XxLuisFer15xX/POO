@@ -1,14 +1,14 @@
 $("#btn-login").click(function(){
     $.ajax({
-		url:"ajax/login-catedraticos.php",
+        url:"ajax/login-coordinadores.php",
 		data:"No_Cuenta="+$("#No_Cuenta").val() + "&password="+$("#password").val(),
 		dataType:"json",
 		method:"POST",
 		success:function(respuesta){
 			console.log(respuesta);
 			if(respuesta.estatus == 1){
-				if(respuesta.jerarquia=="Catedratico");
-                    window.location.href = "Pag-Catedraticos.php";
+				if(respuesta.jerarquia=="Coordinador");
+                    window.location.href = "Pag-Coordinadores.php";
                     
                     $("#contenido-usuarios").append(
                         `
@@ -40,16 +40,10 @@ $("#btn-login").click(function(){
                 $('#btnClose').click(function(){
                     $('.modal_wrap').remove();
                 });
-
-
-               
-
-
             },
             error:function(error){
                 console.error(error);
                 $("#notificacion").append(error.responseText);
             }
-
-	});
+    });
 });
