@@ -8,6 +8,8 @@ class Alumno extends Persona{
     public function Habilitar_Alumno(){
         $archivo = fopen("../data/registro_alumno.json","a+");
         $arreglo = array();
+        $arreglo["nombre"]=$this->nombre;
+        $arreglo["apellido"]=$this->apellido;
         $arreglo["No_Cuenta"]=$this->No_Cuenta;
         $arreglo["password"]=$this->password;
         $arreglo["jerarquia"]=$this->jerarquia;

@@ -157,7 +157,7 @@
 								<option value="Ingenieria Civil">Ingenieria Civil</option>
 								<option value="Ingenieria En Sistemas">Ingenieria En Sistemas</option>
 								<option value="Ingenieria Electrica">Ingenieria Electrica</option>
-								<option value="Ingenieria Industria">Ingenieria Industria</option>
+								<option value="Ingenieria Industrial">Ingenieria Industrial</option>
 								<option value="Ingenieria Mecanica">Ingenieria Mecanica</option>
 								<option value="Ingenieria Quimica">Ingenieria Quimica</option>
 								<option value="Ingenieria Forestal">Ingenieria Forestal</option>
