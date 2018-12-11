@@ -8,7 +8,19 @@ $("#btn-login").click(function(){
 			console.log(respuesta);
 			if(respuesta.estatus == 1){
 				if(respuesta.jerarquia=="Catedratico");
-					window.location.href = "Pag-Catedraticos.php";
+                    window.location.href = "Pag-Catedraticos.php";
+                    
+                    $("#contenido-usuarios").append(
+                        `
+                            <b>${respuesta.nombre}</b>
+                            <b>${respuesta.apellido}</b>
+                            <b>${respuesta.No_Cuenta}</b>
+                            <b>${respuesta.jerarquia}</b>
+                        `
+                    );
+                   
+                    console.log("El servidor DICE: "+respuesta.nombre);
+
             }else{
                 if(respuesta.estatus == 0){
                 $('#No_Cuenta').css('border-bottom-color', '#F14B4B')
@@ -28,6 +40,11 @@ $("#btn-login").click(function(){
                 $('#btnClose').click(function(){
                     $('.modal_wrap').remove();
                 });
+
+
+               
+
+
             },
             error:function(error){
                 console.error(error);

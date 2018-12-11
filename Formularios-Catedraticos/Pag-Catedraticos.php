@@ -1,7 +1,10 @@
 <?php 
     session_start();  
-    if (!isset($_SESSION["No_Cuenta"]))
+    if (!isset($_SESSION["No_Cuenta"])){
         header("Location:no-autorizado.html");//Redireccion con PHP
+    }
+    $valor=$_SESSION["No_Cuenta"];
+    //echo $valor;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -75,12 +78,26 @@
         <hr style="border:2px solid rgb(0,36,132);">
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                <img src="img/imagen_catedratico.png" alt="" style="width:200px;">
+                <img src="img/imagen_catedratico.png" style="width:200px; left:200px; top:40px; display:block; position:absolute;">
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                <h2>Datos Personales:</h2>
-                <div id="mostrar_datos">
-  
+                <h2 style="text-align:center;">Datos Personales del Catedratico:</h2>
+                <div id="contenido-usuarios">
+                        <?php
+                            $archivo = fopen("../Formularios-Administracion/data/registro_docente.json","r");
+                            while(($linea = fgets($archivo))){
+                                $registro = json_decode($linea,true);
+                                if ($valor == $registro["No_Cuenta"]){
+                                    echo    '<p><b>Nombre:     </b>'.$registro['nombre'].'</p><hr style="border: 1.2px solid #FFCC00;">
+                                             <p><b>Apellido:   </b>'.$registro['apellido'].'</p><hr style="border: 1.2px solid #FFCC00;">
+                                             <p><b>Numero de Cuenta:     </b>'.$registro['No_Cuenta'].'</p><hr style="border: 1.2px solid #FFCC00;">
+                                             <p><b>Cargo:      </b>'.$registro["jerarquia"].'</p><hr style="border: 1.2px solid #FFCC00;">
+                                            ';  
+                                    break;
+                                } 
+                            }
+                            fclose($archivo);
+                    ?>
                 </div>
             </div>
         </div>
@@ -124,5 +141,6 @@
     <script src="../Libreria/js/bootstrap.min.js"></script>
     <script src="../Libreria/header.js"></script>
     <script src="../Libreria/footer.js"></script>
+    <script src="js/sign-in.js"></script>
 </body>
 </html>

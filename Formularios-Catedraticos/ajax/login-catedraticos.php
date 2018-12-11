@@ -19,6 +19,4 @@ session_start();
     $registro["estatus"] = "0";
     $registro["mensaje"] = "Credendiales Invalidas, Por Favor Introduzca las nuevas Credenciales y Asegurese de que esten Correctas";
     echo json_encode($registro);
-
-
 ?>
