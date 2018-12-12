@@ -120,7 +120,7 @@
               <h2>Matricula</h2>
               <img class="rounded-circle" src="../Libreria/img/matricula(1).png" alt="Generic placeholder image" width="140" height="140">
               <p style = "margin-top: 57px;">Realiza tu Matrícula del periodo</p>
-              <p style = "margin-top: 55px;"><a class="btn btn-secondary" href="Pag-Alumnos.html" role="button">Matricula</a></p>
+              <p style = "margin-top: 55px;"><a class="btn btn-secondary" href="Opciones-Alumno/Matricula-Alumno.php" role="button">Matricula</a></p>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12" style = "text-align:center;">
                 <h2>Matricula Laboratorio</h2>
