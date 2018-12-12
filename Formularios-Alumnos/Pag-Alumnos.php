@@ -80,7 +80,7 @@
                 <img src="img/imagen_alumno.png" style="width:200px; left:200px; top:40px; display:block; position:absolute;">
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                <h2 style="text-align:center;">Datos Personales del Catedratico:</h2>
+                <h2 style="text-align:center;">Datos Personales del Estudiante:</h2>
                 <div id="contenido-usuarios">
                         <?php
                             $archivo = fopen("../Formularios-Administracion/data/registro_alumno.json","r");
@@ -120,7 +120,7 @@
               <h2>Matricula</h2>
               <img class="rounded-circle" src="../Libreria/img/matricula(1).png" alt="Generic placeholder image" width="140" height="140">
               <p style = "margin-top: 57px;">Realiza tu Matrícula del periodo</p>
-              <p style = "margin-top: 55px;"><a class="btn btn-secondary" href="#" role="button">Matricula</a></p>
+              <p style = "margin-top: 55px;"><a class="btn btn-secondary" href="Pag-Alumnos.html" role="button">Matricula</a></p>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12" style = "text-align:center;">
                 <h2>Matricula Laboratorio</h2>
