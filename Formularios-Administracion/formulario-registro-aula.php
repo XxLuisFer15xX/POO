@@ -236,7 +236,7 @@
 					console.error(error);
 					$("#error").append(error.responseText);
 				}
-			});/*
+			});
 			var errores;
 			if( $('#nombre').val() != null ){
 				
@@ -258,7 +258,7 @@
 			// CERRANDO MODAL ==============================
 			$('#btnClose').click(function(){
 				window.location.href = "formulario-registro-alumno.php";
-			});	*/
+			});	
 		});
 		
 	</script>
