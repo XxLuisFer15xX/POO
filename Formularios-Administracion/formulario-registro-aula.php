@@ -1,12 +1,12 @@
 <?php
-	function generarCodigo($longitud){
+	function generarCodigo(){
 		$acum = 1;
-		$key = "UNAH-REU-";//REU====>REGISTRO ESTUDIANTIL UNIVERSITARIO  + #
+		$key = "AU-";
 		$keys= $key.$acum;
-		$archivo = fopen("data/registro_alumno.json","r");
+		$archivo = fopen("data/registro_aula.json","r");
 		while(($linea=fgets($archivo))){
 			$registro = json_decode($linea,true);
-			if($registro["No_Cuenta"]==$keys){
+			if($registro["ID_aula"]==$keys){
 				$acum = $acum + 1;
 				$keys = $key . ($acum);
 			}else{
@@ -22,7 +22,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Formulario de Estudiantes</title>
+	<title>Formulario de Aulas</title>
 	
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
@@ -39,164 +39,47 @@
 	<main role="main">
 
 		<section class="content-form">
-			<h1 style="text-align: center;">Registro Estudiantes UNAH</h1>
-			<h2 class="sub-title">Datos Generales</h2>
-
-			<form>
+			<h1 style="text-align: center;">Registro Aulas UNAH</h1>
 			
+			<form>
 				<div class="form-group width-12">
-						<h3 class="sub-form" style="text-align: center;">Nombre Y Apellidos:</h3>
-					<div class="width-6">
-					<input type="text" placeholder="Nombres" class="form-control" name="nombre" id="nombre" /> 
+						<h3 class="sub-form" style="text-align: center;">ID del Aula</h3>
+					<div class="width-12">
+					<input type="text" placeholder="ID del Aula" class="form-control" name="nombre" id="ID_aula" value="<?php echo generarCodigo()?>" /> 
 					</div> 
-					<div class="width-6">
-					<input type="text" placeholder="Apellidos" class="form-control" name="apellido" id="apellido" /> 
-					</div>  
+					
 				</div>
 
 				<div class="form-group">
-					<div class="width-6">
-							<h3 class="sub-form" style="text-align: center;">Direccion:</h3>
-						<input type="text" placeholder="Dirección" class="form-control" name="direccion" id="direccion" />
-					</div>
-					<div class="width-6">
-							<h3 class="sub-form" style="text-align: center;">No Identidad:</h3>
-						<input type="text" placeholder="xxxx-xxxx-xxxxx" class="form-control" name="ID" id="ID" />
+					<div class="width-12">
+							<h3 class="sub-form" style="text-align: center;">Número del Aula:</h3>
+						<input type="text" placeholder="Número del Aula" class="form-control" name="direccion" id="numeroAula" />
 					</div>
 				</div>
-				
+
+				<!--Autorellenar-->				
 				<div class="form-group width-12">
-					<div class="width-6">
-							<h3 class="sub-form" style="text-align: center;">Telefono:</h3>
-						<input type="tel" placeholder="Teléfono" class="form-control" name="telefono" id="telefono" /> 
+						<h3 class="sub-form" style="text-align: center;">ID del Edificio</h3>
+					<div class="width-12">
+					<input type="text" placeholder="ID del Edificio" class="form-control" name="nombre" id="ID_edificio"/> 
 					</div> 
-					<div class="width-6">
-							<h3 class="sub-form" style="text-align: center;">Edad:</h3>
-							<input type="text" placeholder="Edad" class="form-control" name="edad" id="edad" /> 
-					</div>   
-				</div>
-
-				<div class="form-group width-12">
-						<div class="width-6">
-							<h3 class="sub-form" style="text-align: center;">Correo:</h3>
-							<input type="email" placeholder="Correo Electronico" class="form-control" name="email" id="email" /> 
-						</div> 
-						<div class="width-6">
-							<h3 class="sub-form" style="text-align: center;">Password:</h3>
-							<input type="password" placeholder="Password" class="form-control" name="password" id="password" /> 
-						</div>   
-				</div>
-
-				<div class="form-group width-12">
-						<h3 class="sub-form" style="text-align: center;">Sexo:</h3>
-						
-						<div class="width-3">
-							<label for="programador"><input type="radio"  id="masculino" name="genero" class="genero" value="masculino"/>Masculino</label>
-						</div>
-						<div class="width-3">
-							<label for="disenador"><input type="radio" id="femenino" name="genero" class="genero" value="femenino"/>femenino</label>
-						</div>
-						<div class="width-3">
-							<label for="disenador"><input type="radio" id="otro" name="genero" class="genero" value="otro"/>Otro</label>
-						</div>
-				</div>
 					
-				<div class="form-group width-12">
-					<h3 class="sub-form" style="text-align: center;">Estado Civil</h3>
-					<div class="width-3">
-						<label for="soltero"><input type="radio" id="soltero" class="estado" name="estado" value="soltero" />Soltero</label>
-						</div>
-						<div class="width-3">
-						<label for="casado"><input type="radio" id="casado" class="estado" name="estado" value="casado"/>Casado</label>
-						</div>
-						<div class="width-3">
-						<label for="divorciado"><input type="radio" id="divorciado" class="estado" name="estado" value="divorciado"/>Divorciado</label>
-					</div>
-					<div class="width-3">
-						<label for="viudo"><input type="radio" id="viudo" class="estado" name="estado" value="viudo" />Viudo</label>
+				</div>
+
+				<div class="form-group">
+					<div class="width-12">
+							<h3 class="sub-form" style="text-align: center;">Nombre del Edificio:</h3>
+						<input type="text" placeholder="Nombre del Edificio" class="form-control" name="direccion" id="nombreEdificio" />
 					</div>
 				</div>
 				
-				</div>
 				<div class="form-group width-12">
-					<div class="width-6">
-						<h3 class="sub-form" style="text-align: center;">Fecha de ingreso</h3>
-						<input type="date" nombre="fecha" class="form-control" id="fecha" placeholder="dd/mm/aa"/>
+					<div class="width-12">
+							<h3 class="sub-form" style="text-align: center;">Centro Regional:</h3>
+						<input type="tel" placeholder="Centro Regional" class="form-control" name="telefono" id="centroRegional" /> 
 					</div> 
-					<div class="width-6">
-						<h3 class="sub-form" style="text-align: center;">Centro de Estudios</h3>
-						<!--input type="jerarquia" nombre="jerarquia" class="form-control" id="jerarquia" placeholder="Catedratico,Coordinador o Jefe de Depto"/--> 
-						<select name="centro" id="centro" style="background: #fff; border: none; font-size: 14px; height: 38px; padding: 5px; width: 379px; left:3px;">
-							<option value="">Seleccione</option>
-							<option value="CURC">Centro Universitario Regional Del Centro (CURC)</option>
-							<option value="CU">Ciudad Universitaria (CU)</option>
-							<option value="UNAH-VS">Valle de Sula (UNAH-VS)</option>
-							<option value="UNAH-TEC-AGUÁN">Centro Tecnológico del Valle de Aguan (UNAH-TEC-AGUÁN)</option>
-							<option value="UNAH-TEC-Danli">Centro Tecnológico de Danlí (UNAH-TEC-Danli)</option>
-							<option value="UNAH-CURLA">Centro Universitario Regional de Litoral Atlántico (UNAH-CURLA)</option>
-							<option value="UNAH-CURLP">entro Univesitario Regional del Litoral Pacífico (UNAH-CURLP)</option>
-							<option value="UNAH-CUROC">Centro Universitario Regional de Occidente (UNAH-CUROC)</option>
-							<option value="UNAH-CURNO">Centro Universitario Regional Nororiental (UNAH-CURNO)</option>
-						</select>
-					</div>
 				</div>
-				<div class="form-group width-12">
-					<div class="width-6">
-							<h3 class="sub-form" style="text-align: center;">Numero de Cuenta Generado</h3>
-							<input readonly="readonly" type="text" nombre="No_Cuenta" class="form-control" id="No_Cuenta" value="<?php echo generarCodigo(1)?>"/> 
-					</div>
-					<div class="width-6">
-							<h3 class="sub-form" style="text-align: center;">Jerarquia</h3>
-							<input readonly="readonly" type="text" nombre="jerarquia" class="form-control" id="jerarquia" value="Estudiante"/> 
-					</div>
-				</div>
-				<div class="width-12">
-							<h3 class="sub-form" style="text-align: center;">Carrera A Estudiar</h3>
-							<select name="carrera" id="carrera" style="background: #fff; border: none; font-size: 14px; height: 32.5px; padding: 5px; width: 100%; left:3px;">
-								<option value="">Seleccione</option>
-								<option value="Ingenieria Civil">Ingenieria Civil</option>
-								<option value="Ingenieria En Sistemas">Ingenieria En Sistemas</option>
-								<option value="Ingenieria Electrica">Ingenieria Electrica</option>
-								<option value="Ingenieria Industrial">Ingenieria Industrial</option>
-								<option value="Ingenieria Mecanica">Ingenieria Mecanica</option>
-								<option value="Ingenieria Quimica">Ingenieria Quimica</option>
-								<option value="Ingenieria Forestal">Ingenieria Forestal</option>
-								<option value="Ingenieria Agronomica">ingenieria Agronomica</option>
-								<option value="Licenciatura en Geografia">Licenciatura en Geografia</option>
-								<option value="Licenciatura en Arqueoastronomia">Licenciatura en Arqueoastronomia</option>
-								<option value="Licenciatura en Astronomia">Licenciatura en Astronomia</option>
-								<option value="Licenciatura en Antropologia">Licenciatura en Antropologia</option>
-								<option value="Licenciatura en Historia">Licenciatura en Historia</option>
-								<option value="Licenciatura en Desarrollo-Local">Licenciatura en Desarrollo Local</option>
-								<option value="Licenciatura en Periodismo">Licenciatura en Periodismo</option>
-								<option value="Licenciatura en Trabajo Social">Licenciatura en Trabajo Social</option>
-								<option value="Tecnico Desarrollo Municipal">Tecnico Desarrollo Municipal</option>
-								<option value="Licenciatura En Matematicas">Licenciatura En Matematicas</option>
-								<option value="Licenciatura En Fisica">Licenciatura En Fisica</option>
-								<option value="Licenciatura en Microbiologia">Licenciatura en Microbiologia</option>
-								<option value="Licenciatura En Biologia">Licenciatura En Biologia</option>
-								<option value="Licenciatura En Derecho">Licenciatura En Derecho</option>
-								<option value="Licenciatura en Enfermería">Licenciatura en Enfermería</option>
-								<option value="Licenciatura En Medicina General">Licenciatura En Medicina General</option>
-								<option value="Licenciatura En Nutricion">Licenciatura En Nutricion</option>
-								<option value="Licenciatura Informatica Administrativa">Licenciatura Informatica Administrativa</option>
-								<option value="Licenciatura Administracion De Empresas">Licenciatura Administracion De Empresas</option>
-								<option value="Licenciatura En Economia">Licenciatura En Economia</option>
-								<option value="Licenciatura En Banca Y Finanzas">Licenciatura En Banca Y Finanzas</option>
-								<option value="Licenciatura En Mercadotecnia">Licenciatura En Mercadotecnia</option>
-								<option value="Licenciatura En Comercio Internacional">Licenciatura En Comercio Internacional</option>
-								<option value="Lic En Contaduria Publica">Lic En Contaduria Publica</option>
-								<option value="Licenciatura En Administracion Aduanera">Licenciatura En Administracion Aduanera</option>
-								<option value="Licenciatura En Arquitectura">Licenciatura En Arquitectura</option>
-								<option value="Licenciatura En Pedagogia">Licenciatura En Pedagogia</option>
-								<option value="Licenciatura En Letras">Licenciatura En Letras</option>
-								<option value="Licenciatura En Filosofia">Licenciatura En Filosofia</option>
-								<option value="Licenciatura En Lenguas Extranjeras">Licenciatura En Lenguas Extranjeras</option>
-								<option value="Licenciatura En Musica">Licenciatura En Musica</option>
-								<option value="Licenciatura En Odontologia">Licenciatura En Odontologia</option>
-								<option value="Licenciatura En Quimica Y Farmancia">Licenciatura En Quimica Y Farmancia</option>
-							</select>
-				</div>
+
 				<div class="form-group width-12">
 						<input type="button" value="Registrar" class="form-control btn btn-principal" id="btn-registrar"/>	 
 				</div>
@@ -209,56 +92,43 @@
 	<script src="../Libreria/js/jquery-3.3.1.min.js"></script>
 	<script>
 		$("#btn-registrar").click(function(){
-			var parametros =  `nombre=${$("#nombre").val()}&apellido=${$("#apellido").val()}&direccion=${$("#direccion").val()}&ID=${$("#ID").val()}&telefono=${$("#telefono").val()}&edad=${$("#edad").val()}&email=${$("#email").val()}&password=${$("#password").val()}&genero=${$(".genero").val()}&estado=${$(".estado").val()}&fecha=${$("#fecha").val()}&centro=${$("#centro").val()}&No_Cuenta=${$("#No_Cuenta").val()}&jerarquia=${$("#jerarquia").val()}&carrera=${$("#carrera").val()}`;
+			var parametros =  `ID_aula=${$("#ID_aula").val()}&numeroAula=${$("#numeroAula").val()}&ID_edificio=${$("#ID_edificio").val()}&nombreEdificio=${$("#nombreEdificio").val()}&centroRegional=${$("#centroRegional").val()}`;
 			console.log("El cliente envia estos parametros: "+parametros);
 			$.ajax({
-				url:"ajax/proceso-ingreso.php",
+				url:"ajax/proceso-ingreso-aulas.php",
 				method:"GET",
-				data:parametros,
 				dataType:"json",
+				data:parametros,
 				success:function(respuesta){
-					console.log("El servidor dice: "+respuesta.nombre);
+					console.log("El servidor dice: "+respuesta.ID_aula);
 				},
 				error:function(error){
 					console.error(error);
 					$("#error").append(error.responseText);
 				}
 			});
-			$.ajax({
-				url:"ajax/proceso-ingreso-alumnos.php",
-				method:"GET",
-				data:parametros,
-				dataType:"json",
-				success:function(respuesta){
-					console.log("El servidor dice: "+respuesta.nombre);
-				},
-				error:function(error){
-					console.error(error);
-					$("#error").append(error.responseText);
-				}
-			});
+			/*
 			var errores;
-			if( $('#nombre').val() != null ){
+			if( $('#nombreEdificio').val() != null ){
 				
-				$('#nombre').css('border-bottom-color', '#F14B4B')
+				$('#nombreEdificio').css('border-bottom-color', '#F14B4B')
 			}
 			if( errores == '' == false){
-            var mensajeModal = '<div class="modal_wrap">'+
-                                    '<div class="mensaje_modal">'+
-										'<h2 style="text-align:center;">Credenciales De Ingreso al Sistema</h2>'+
-										'<p><b>Numero de Usuario:</b></p>'+$('#No_Cuenta').val()+
-										'<p><b>Contraseña:</b></p>'+$('#password').val()+
-										'<h2>Bienvenido A La Universidad Nacional Autonoma de Honduras</h2>'+
-                                        '<span id="btnClose">Finalizar</span>'+
-                                    '</div>'+
-                                '</div>'
+            	var mensajeModal = '<div class="modal_wrap">'+
+            	                        '<div class="mensaje_modal">'+
+											'<h2 style="text-align:center;">Aula Creada</h2>'+
+											'<p><b>Número de Aula:</b></p>'+$('#numeroAula').val()+
+											'<p><b>Nombre del Edificio:</b></p>'+$('#nombreEdificio').val()+
+            	                            '<span id="btnClose">Finalizar</span>'+
+            	                        '</div>'+
+            	                    '</div>'
 
-            $('body').append(mensajeModal);
+            	$('body').append(mensajeModal);
         	}
 			// CERRANDO MODAL ==============================
 			$('#btnClose').click(function(){
-				window.location.href = "formulario-registro-alumno.php";
-			});	
+				window.location.href = "Pag-Administracion-General.php";
+			});	*/
 		});
 		
 	</script>

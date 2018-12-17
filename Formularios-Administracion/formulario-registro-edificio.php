@@ -22,7 +22,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Formulario de Estudiantes</title>
+	<title>Formulario de Edificios</title>
 	
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
