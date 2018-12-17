@@ -10,7 +10,6 @@ body{
     background-size: cover;
 }
 main {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +87,7 @@ main {
     cursor: pointer;
 }
 footer{
-	    position: fixed;
+
     bottom: 0px;
     width: 100%;
 }
