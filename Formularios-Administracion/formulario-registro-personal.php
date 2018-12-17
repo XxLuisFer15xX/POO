@@ -37,13 +37,10 @@
 	<link rel="stylesheet" href="css/modificaciones.css">
 	<link rel="stylesheet" href="../Libreria/css/estilos.css">
 	
-
-    
     <link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
     <script src = "../Libreria/js/jquery-3.3.1.min.js"></script>
     <script src = "../Libreria/js/jquery.flexslider.js"></script>
     <script src = "../Libreria/js/main.js"></script>
-	
 </head>
 <body style="background-image: url(img/fondo2.jpg);">
 	<!-- Header -->
