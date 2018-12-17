@@ -7,14 +7,14 @@
 {"carrera":"Ingenieria Civil","codigo":"MM-201","asignatura":"Calculo I","uv":"5"}
 {"carrera":"Ingenieria Civil","codigo":"IN-101","asignatura":"Ingles I","uv":"4"}
 {"carrera":"Ingenieria Civil","codigo":"MM-211","asignatura":"Vectores y Matrices","uv":"3"}
-{"carrera":"Ingenieria Civil","codigo":"EG-011","asignatura":"Español","uv":"4"}
+{"carrera":"Ingenieria Civil","codigo":"EG-011","asignatura":"Español General","uv":"4"}
 {"carrera":"Ingenieria Civil","codigo":"IN-102","asignatura":"Ingles II","uv":"4"}
 {"carrera":"Ingenieria Civil","codigo":"HH-101","asignatura":"Historia de Honduras","uv":"4"}
 {"carrera":"Ingenieria Civil","codigo":"FF-101","asignatura":"Filosofia","uv":"4"}
 {"carrera":"Ingenieria Civil","codigo":"MM-202","asignatura":"Calculo II","uv":"5"}
 {"carrera":"Ingenieria Civil","codigo":"FS-100","asignatura":"Fisica General I","uv":"5"}
 {"carrera":"Ingenieria Civil","codigo":"QQ-100","asignatura":"Quimica Fundamental","uv":"4"}
-{"carrera":"Ingenieria Civil","codigo":"Ic-302","asignatura":"Probabilidad y Estadistica Aplicada","uv":"4"}
+{"carrera":"Ingenieria Civil","codigo":"IC-302","asignatura":"Probabilidad y Estadistica Aplicada","uv":"4"}
 {"carrera":"Ingenieria Civil","codigo":"IN-103","asignatura":"Ingles III","uv":"4"}
 {"carrera":"Ingenieria Civil","codigo":"ElectivaH","asignatura":"Electiva en Humanidades","uv":"3"}
 {"carrera":"Ingenieria Civil","codigo":"MM-411","asignatura":"Ecuaciones Diferenciales","uv":"3"}
@@ -60,3 +60,4 @@
 {"carrera":"Ingenieria Civil","codigo":"Ele-1","asignatura":"Electiva Transporte","uv":"4"}
 {"carrera":"Ingenieria Civil","codigo":"IC-014","asignatura":"Seminario de Investigacion","uv":"4"}
 {"carrera":"Ingenieria Civil","codigo":"Ele-2","asignatura":"Electiva Hidrotecnia","uv":"4"}
+
