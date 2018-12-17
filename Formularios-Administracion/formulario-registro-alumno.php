@@ -21,21 +21,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Formulario de Estudiantes</title>
-	
+<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Formulario de Registro</title>
+    <link rel="icon" href="../Libreria/img/logo.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
+
+    <!--Arvhicos CSS-->
+    <link rel="stylesheet" href="../Libreria/css/fontello.css">
+    <link rel="stylesheet" href="../Libreria/css/font-awesome.css">
+    <link rel="stylesheet" href="../Libreria/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Libreria/css/bootstrap-complements.css">
 	<link rel="stylesheet" href="css/modificaciones.css">
-	<link rel="icon" href="img/logo.ico">
-
-
+	<link rel="stylesheet" href="../Libreria/css/estilos.css">
 	
+    <link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
+    <script src = "../Libreria/js/jquery-3.3.1.min.js"></script>
+    <script src = "../Libreria/js/jquery.flexslider.js"></script>
+    <script src = "../Libreria/js/main.js"></script>
 </head>
 <body style="background-image: url(img/fondo2.jpg);">
-	<div id="incluir-header">
+	<!-- Header -->
+    <div id="incluir-header">
 
-	</div>
+    </div>
+	<br><br>
+	<!-- Contenido -->
 	<main role="main">
 
 		<section class="content-form">
@@ -203,7 +216,18 @@
 				
 			</form>
 		</section>
-	</main>	
+	</main>
+	
+	<!-- Footer -->
+    <div id="incluir-footer">
+
+    </div>
+  
+    <script src="../Libreria/js/jquery-latest.js"></script>
+    <script src="../Libreria/js/bootstrap.min.js"></script>
+    <script src="../Libreria/header.js"></script>
+	<script src="../Libreria/footer.js"></script>
+	
 	<div id="error" style="witdh:100%; heigth:100px; background-color:red;"></div>
 	<script src="../Libreria/js/bootstrap.min.js"></script>
 	<script src="../Libreria/js/jquery-3.3.1.min.js"></script>
