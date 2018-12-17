@@ -1,5 +1,5 @@
 <?php
-    class Edificio{
+    class Aula{
         private $ID_aula;
         private $numeroAula;
         private $ID_edificio;
@@ -47,7 +47,7 @@
         }
 
         public function Registrar_Aula(){
-            $archivo = fopen("../data/registro_edificio.json","a+");
+            $archivo = fopen("../data/registro_aula.json","a+");
             $arreglo = array();
             $arreglo["ID_aula"]=$this->ID_aula;
             $arreglo["numeroAula"]=$this->numeroAula;
