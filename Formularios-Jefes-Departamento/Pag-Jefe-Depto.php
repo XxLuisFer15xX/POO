@@ -1,3 +1,11 @@
+<?php 
+    session_start();  
+    if (!isset($_SESSION["No_Cuenta"])){
+        header("Location:no-autorizado.html");//Redireccion con PHP
+    }
+    $valor=$_SESSION["No_Cuenta"];
+    //echo $valor;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,6 +76,32 @@
     <!-- Contenido -->
     <div class = "container">
         <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <img src="img/imagen_catedratico.png" style="width:200px; left:200px; top:40px; display:block; position:absolute;">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <h2 style="text-align:center;">Datos Personales del Coordinador:</h2>
+                <div id="contenido-usuarios">
+                        <?php
+                            $archivo = fopen("../Formularios-Administracion/data/registro_docente.json","r");
+                            while(($linea = fgets($archivo))){
+                                $registro = json_decode($linea,true);
+                                if ($valor == $registro["No_Cuenta"]){
+                                    echo    '<p><b>Nombres:     </b>'.$registro['nombre'].'</p><hr style="border: 1.2px solid #FFCC00;">
+                                             <p><b>Apellidos:   </b>'.$registro['apellido'].'</p><hr style="border: 1.2px solid #FFCC00;">
+                                             <p><b>Numero de Cuenta:     </b>'.$registro['No_Cuenta'].'</p><hr style="border: 1.2px solid #FFCC00;">
+                                             <p><b>Cargo:      </b>'.$registro["jerarquia"].'</p><hr style="border: 1.2px solid #FFCC00;">
+                                            ';  
+                                    break;
+                                } 
+                            }
+                            fclose($archivo);
+                    ?>
+                </div>
+            </div>
+        </div>
+        <hr style="border:2px solid rgb(0,36,132);">
+        <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" style = "text-align:center;">
               <h2>Lista de Secciones</h2>
               <img class="rounded-circle" src="../Libreria/img/Listado.jpg" alt="Generic placeholder image" width="140" height="140">
@@ -106,7 +140,7 @@
                 <p>
                     Cierra tu cuenta para no permitir que quede expuesta tu informacion y cambios realizados por ti.
                 </p>
-                <p style = "margin-top: 15px;"><a class="btn btn-secondary" href="#" role="button">Cerrar Sesion</a></p>
+                <p style = "margin-top: 15px;"><a class="btn btn-secondary" href="exit.php" role="button">Cerrar Sesion</a></p>
             </div>
           </div>
     </div>
@@ -120,5 +154,6 @@
     <script src="../Libreria/js/bootstrap.min.js"></script>
     <script src="../Libreria/header.js"></script>
     <script src="../Libreria/footer.js"></script>
+    
 </body>
 </html>

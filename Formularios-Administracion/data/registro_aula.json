@@ -1,15 +1,3 @@
 {"ID_aula":"AU-1","numeroAula":"101","ID_edificio":"ED-1","nombreEdificio":"B2","centroRegional":"CU"}
 {"ID_aula":"AU-2","numeroAula":"102","ID_edificio":"ED-1","nombreEdificio":"B2","centroRegional":"CU"}
-{"ID_aula":"AU-3","numeroAula":"103","ID_edificio":"ED-1","nombreEdificio":"B2","centroRegional":"CU"}
-{"ID_aula":"AU-4","numeroAula":"104","ID_edificio":"ED-1","nombreEdificio":"B2","centroRegional":"CU"}
-{"ID_aula":"AU-5","numeroAula":"105","ID_edificio":"ED-1","nombreEdificio":"B2","centroRegional":"CU"}
-{"ID_aula":"AU-6","numeroAula":"101","ID_edificio":"ED-2","nombreEdificio":"B1","centroRegional":"CU"}
-{"ID_aula":"AU-7","numeroAula":"102","ID_edificio":"ED-2","nombreEdificio":"B1","centroRegional":"CU"}
-{"ID_aula":"AU-8","numeroAula":"103","ID_edificio":"ED-2","nombreEdificio":"B1","centroRegional":"CU"}
-{"ID_aula":"AU-9","numeroAula":"104","ID_edificio":"ED-2","nombreEdificio":"B1","centroRegional":"CU"}
-{"ID_aula":"AU-10","numeroAula":"210","ID_edificio":"ED-3","nombreEdificio":"E1","centroRegional":"CU"}
-{"ID_aula":"AU-11","numeroAula":"211","ID_edificio":"ED-3","nombreEdificio":"E1","centroRegional":"CU"}
-{"ID_aula":"AU-12","numeroAula":"301","ID_edificio":"ED-4","nombreEdificio":"F1","centroRegional":"CU"}
-{"ID_aula":"AU-13","numeroAula":"302","ID_edificio":"ED-4","nombreEdificio":"F1","centroRegional":"CU"}
-{"ID_aula":"AU-14","numeroAula":"401","ID_edificio":"ED-5","nombreEdificio":"D1","centroRegional":"CU"}
-{"ID_aula":"AU-15","numeroAula":"105","ID_edificio":"ED-1","nombreEdificio":"B2","centroRegional":"CU"}
+{"ID_aula":"AU-3","numeroAula":"103","ID_edificio":"ED-1","nombreEdificio":"E1","centroRegional":"CU"}

@@ -29,24 +29,17 @@
 
     <link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
 
-    <!--Arvhicos CSS-->
-    <link rel="stylesheet" href="../Libreria/css/fontello.css">
-    <link rel="stylesheet" href="../Libreria/css/font-awesome.css">
-    <link rel="stylesheet" href="../Libreria/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Libreria/css/bootstrap-complements.css">
+	    <!--Arvhicos CSS-->
+
 	<link rel="stylesheet" href="css/modificaciones.css">
-	<link rel="stylesheet" href="../Libreria/css/estilos.css">
+	
 	
     <link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
-    <script src = "../Libreria/js/jquery-3.3.1.min.js"></script>
-    <script src = "../Libreria/js/jquery.flexslider.js"></script>
-    <script src = "../Libreria/js/main.js"></script>
+
+	
 </head>
 <body style="background-image: url(img/fondo2.jpg);">
-	<!-- Header -->
-    <div id="incluir-header">
 
-    </div>
 	<br><br>
 	<!-- Contenido -->
 	<main role="main">
@@ -210,8 +203,14 @@
 								<option value="Licenciatura En Quimica Y Farmancia">Licenciatura En Quimica Y Farmancia</option>
 							</select>
 				</div>
-				<div class="form-group width-12">
-						<input type="button" value="Registrar" class="form-control btn btn-principal" id="btn-registrar"/>	 
+				<div class="form-group width-12" >
+					<div class="width-6" style="margin-left:200px;" style="margin-top:10px;">
+						<input type="button" value="Registrar" class="form-control btn btn-principal" id="btn-registrar"/>	
+					</div> 
+					<div class="width-6" style="margin-left:200px;">
+					
+					<input type="button" onclick="location.href='Pag-Administracion-General.php'" value="Regresar" class="form-control btn btn-principal" id="btn-regresar"/>	
+					</div>
 				</div>
 				
 			</form>
@@ -219,14 +218,9 @@
 	</main>
 	
 	<!-- Footer -->
-    <div id="incluir-footer">
-
-    </div>
   
     <script src="../Libreria/js/jquery-latest.js"></script>
     <script src="../Libreria/js/bootstrap.min.js"></script>
-    <script src="../Libreria/header.js"></script>
-	<script src="../Libreria/footer.js"></script>
 	
 	<div id="error" style="witdh:100%; heigth:100px; background-color:red;"></div>
 	<script src="../Libreria/js/bootstrap.min.js"></script>
@@ -260,7 +254,7 @@
 					console.error(error);
 					$("#error").append(error.responseText);
 				}
-			});/*
+			});
 			var errores;
 			if( $('#nombre').val() != null ){
 				
@@ -282,7 +276,7 @@
 			// CERRANDO MODAL ==============================
 			$('#btnClose').click(function(){
 				window.location.href = "formulario-registro-alumno.php";
-			});	*/
+			});
 		});
 		
 	</script>
