@@ -159,48 +159,48 @@
 				<div class="width-12">
 							<h3 class="sub-form" style="text-align: center;">Carrera A Estudiar</h3>
 							<select name="carrera" id="carrera" style="background: #fff; border: none; font-size: 14px; height: 32.5px; padding: 5px; width: 100%; left:3px;">
-								<option value="">Seleccione</option>
-								<option value="Ingenieria Civil">Ingenieria Civil</option>
-								<option value="Ingenieria En Sistemas">Ingenieria En Sistemas</option>
-								<option value="Ingenieria Electrica">Ingenieria Electrica</option>
-								<option value="Ingenieria Industrial">Ingenieria Industrial</option>
-								<option value="Ingenieria Mecanica">Ingenieria Mecanica</option>
-								<option value="Ingenieria Quimica">Ingenieria Quimica</option>
-								<option value="Ingenieria Forestal">Ingenieria Forestal</option>
-								<option value="Ingenieria Agronomica">ingenieria Agronomica</option>
-								<option value="Licenciatura en Geografia">Licenciatura en Geografia</option>
-								<option value="Licenciatura en Arqueoastronomia">Licenciatura en Arqueoastronomia</option>
-								<option value="Licenciatura en Astronomia">Licenciatura en Astronomia</option>
-								<option value="Licenciatura en Antropologia">Licenciatura en Antropologia</option>
-								<option value="Licenciatura en Historia">Licenciatura en Historia</option>
-								<option value="Licenciatura en Desarrollo-Local">Licenciatura en Desarrollo Local</option>
-								<option value="Licenciatura en Periodismo">Licenciatura en Periodismo</option>
-								<option value="Licenciatura en Trabajo Social">Licenciatura en Trabajo Social</option>
-								<option value="Tecnico Desarrollo Municipal">Tecnico Desarrollo Municipal</option>
-								<option value="Licenciatura En Matematicas">Licenciatura En Matematicas</option>
-								<option value="Licenciatura En Fisica">Licenciatura En Fisica</option>
-								<option value="Licenciatura en Microbiologia">Licenciatura en Microbiologia</option>
-								<option value="Licenciatura En Biologia">Licenciatura En Biologia</option>
-								<option value="Licenciatura En Derecho">Licenciatura En Derecho</option>
-								<option value="Licenciatura en Enfermería">Licenciatura en Enfermería</option>
-								<option value="Licenciatura En Medicina General">Licenciatura En Medicina General</option>
-								<option value="Licenciatura En Nutricion">Licenciatura En Nutricion</option>
-								<option value="Licenciatura Informatica Administrativa">Licenciatura Informatica Administrativa</option>
-								<option value="Licenciatura Administracion De Empresas">Licenciatura Administracion De Empresas</option>
-								<option value="Licenciatura En Economia">Licenciatura En Economia</option>
-								<option value="Licenciatura En Banca Y Finanzas">Licenciatura En Banca Y Finanzas</option>
-								<option value="Licenciatura En Mercadotecnia">Licenciatura En Mercadotecnia</option>
-								<option value="Licenciatura En Comercio Internacional">Licenciatura En Comercio Internacional</option>
-								<option value="Lic En Contaduria Publica">Lic En Contaduria Publica</option>
-								<option value="Licenciatura En Administracion Aduanera">Licenciatura En Administracion Aduanera</option>
-								<option value="Licenciatura En Arquitectura">Licenciatura En Arquitectura</option>
-								<option value="Licenciatura En Pedagogia">Licenciatura En Pedagogia</option>
-								<option value="Licenciatura En Letras">Licenciatura En Letras</option>
-								<option value="Licenciatura En Filosofia">Licenciatura En Filosofia</option>
-								<option value="Licenciatura En Lenguas Extranjeras">Licenciatura En Lenguas Extranjeras</option>
-								<option value="Licenciatura En Musica">Licenciatura En Musica</option>
-								<option value="Licenciatura En Odontologia">Licenciatura En Odontologia</option>
-								<option value="Licenciatura En Quimica Y Farmancia">Licenciatura En Quimica Y Farmancia</option>
+								<option id="" value="">Seleccione</option>
+								<option id="Ingenieria Civil" value="Ingenieria Civil">Ingenieria Civil</option>
+								<option id="Ingenieria En Sistemas" value="Ingenieria En Sistemas">Ingenieria En Sistemas</option>
+								<option id="Ingenieria Electrica" value="Ingenieria Electrica">Ingenieria Electrica</option>
+								<option id="" value="Ingenieria Industrial">Ingenieria Industrial</option>
+								<option id="" value="Ingenieria Mecanica">Ingenieria Mecanica</option>
+								<option id="" value="Ingenieria Quimica">Ingenieria Quimica</option>
+								<option id="" value="Ingenieria Forestal">Ingenieria Forestal</option>
+								<option id="" value="Ingenieria Agronomica">ingenieria Agronomica</option>
+								<option id="" value="Licenciatura en Geografia">Licenciatura en Geografia</option>
+								<option id="" value="Licenciatura en Arqueoastronomia">Licenciatura en Arqueoastronomia</option>
+								<option id="" value="Licenciatura en Astronomia">Licenciatura en Astronomia</option>
+								<option id="" value="Licenciatura en Antropologia">Licenciatura en Antropologia</option>
+								<option id="" value="Licenciatura en Historia">Licenciatura en Historia</option>
+								<option id="" value="Licenciatura en Desarrollo-Local">Licenciatura en Desarrollo Local</option>
+								<option id="" value="Licenciatura en Periodismo">Licenciatura en Periodismo</option>
+								<option id="" value="Licenciatura en Trabajo Social">Licenciatura en Trabajo Social</option>
+								<option id="" value="Tecnico Desarrollo Municipal">Tecnico Desarrollo Municipal</option>
+								<option id="" value="Licenciatura En Matematicas">Licenciatura En Matematicas</option>
+								<option id="" value="Licenciatura En Fisica">Licenciatura En Fisica</option>
+								<option id="" value="Licenciatura en Microbiologia">Licenciatura en Microbiologia</option>
+								<option id="" value="Licenciatura En Biologia">Licenciatura En Biologia</option>
+								<option id="" value="Licenciatura En Derecho">Licenciatura En Derecho</option>
+								<option id="" value="Licenciatura en Enfermería">Licenciatura en Enfermería</option>
+								<option id="" value="Licenciatura En Medicina General">Licenciatura En Medicina General</option>
+								<option id="" value="Licenciatura En Nutricion">Licenciatura En Nutricion</option>
+								<option id="" value="Licenciatura Informatica Administrativa">Licenciatura Informatica Administrativa</option>
+								<option id="" value="Licenciatura Administracion De Empresas">Licenciatura Administracion De Empresas</option>
+								<option id="" value="Licenciatura En Economia">Licenciatura En Economia</option>
+								<option id="" value="Licenciatura En Banca Y Finanzas">Licenciatura En Banca Y Finanzas</option>
+								<option id="" value="Licenciatura En Mercadotecnia">Licenciatura En Mercadotecnia</option>
+								<option id="" value="Licenciatura En Comercio Internacional">Licenciatura En Comercio Internacional</option>
+								<option id="" value="Lic En Contaduria Publica">Lic En Contaduria Publica</option>
+								<option id="" value="Licenciatura En Administracion Aduanera">Licenciatura En Administracion Aduanera</option>
+								<option id="" value="Licenciatura En Arquitectura">Licenciatura En Arquitectura</option>
+								<option id="Licenciatura En Pedagogia" value="Licenciatura En Pedagogia">Licenciatura En Pedagogia</option>
+								<option id="Licenciatura En Letras" value="Licenciatura En Letras">Licenciatura En Letras</option>
+								<option id="Licenciatura En Filosofia" value="Licenciatura En Filosofia">Licenciatura En Filosofia</option>
+								<option id="Licenciatura En Lenguas Extranjeras" value="Licenciatura En Lenguas Extranjeras">Licenciatura En Lenguas Extranjeras</option>
+								<option id="Licenciatura En Musica" value="Licenciatura En Musica">Licenciatura En Musica</option>
+								<option id="Licenciatura En Odontologia" value="Licenciatura En Odontologia">Licenciatura En Odontologia</option>
+								<option id="Licenciatura En Quimica Y Farmancia" value="Licenciatura En Quimica Y Farmancia">Licenciatura En Quimica Y Farmancia</option>
 							</select>
 				</div>
 				<div class="form-group width-12" >

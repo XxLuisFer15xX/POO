@@ -1,53 +1,53 @@
-{"carrera":"Ingenieria Electrica Industrial","codigo":"MM-110","asignatura":"Matematicas I","uv":"5"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"MM-111","asignatura":"Geometria y Trigonometria","uv":"5"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"FF-101","asignatura":"Filosofia","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"SC-101","asignatura":"Sociologia","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IN-101","asignatura":"Idioma Extranjero I","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"MM-201","asignatura":"Calculo I","uv":"5"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"MM-211","asignatura":"Vectores y Matrices","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"QQ-100","asignatura":"Quimica Fundamental","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"DQ-101","asignatura":"Dibujo I","uv":"2"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"EG-011","asignatura":"Español General","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IN-102","asignatura":"Idioma Extranjero II","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"MM-202","asignatura":"Calculo II","uv":"5"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"MM-314","asignatura":"Programacion I","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"FS-100","asignatura":"Fisica General I","uv":"5"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-210","asignatura":"Introduccion A la Ingenieria Electrica","uv":"2"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IN-103","asignatura":"Idioma Extranjero III","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"FS-200","asignatura":"Fisica General II","uv":"5"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"MM-411","asignatura":"Ecuaciones Diferenciales","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"HH-101","asignatura":"Historia de Honduras","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-221","asignatura":"Circuitos Electricos I","uv":"5"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"MM-401","asignatura":"Estadistica I","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"Elec-D","asignatura":"Electiva en Arte o Deporte","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"TM-324","asignatura":"Termodinamica I","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"MM-412","asignatura":"Analisis Numerico","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"FF-201","asignatura":"Logica Matematica","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"FS-321","asignatura":"Electricidad Y Magnetismo","uv":"5"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-321","asignatura":"Circuitos Elextricos II","uv":"5"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"OPT-CCNN","asignatura":"Optativa en campo de CC.NN","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"MM-502","asignatura":"Variable Compleja","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"FS-415","asignatura":"Electricidad y Magnetismo II","uv":"5"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-423","asignatura":"T. de la Probabilidad","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-313","asignatura":"Metodos Matematicos para Ingenieria","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-314","asignatura":"Electronica I","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-411","asignatura":"Organizacion y Metodos","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-414","asignatura":"Electronica II","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-415","asignatura":"Teoria de la Estabilidad","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-416","asignatura":"Electro,agnetismo","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-421","asignatura":"Maquinas Electricas","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"OPT","asignatura":"Optativa de Orientacion","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"II-421","asignatura":"Ingenieria de Metodos","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-515","asignatura":"T de sistemas lineales","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-425","asignatura":"Comunicaciones I","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-511","asignatura":"Maquinas Electricas","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-425","asignatura":"Comunicaciones I","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-511","asignatura":"Investigaciones de Operaciones","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"OPT3","asignatura":"OPTATIVA III","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"OPT4","asignatura":"OPTATIVA IV","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"OPT5","asignatura":"OPTATIVA V","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"OPT6","asignatura":"OPTATIVA VI","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-521","asignatura":"Ingenieria Econommica","uv":"3"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-524","asignatura":"Proyecto","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"IE-900","asignatura":"Seminario de Investigacion","uv":"4"}
-{"carrera":"Ingenieria Electrica Industrial","codigo":"OPT7","asignatura":"Optativa VII","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"MM-110","asignatura":"Matematicas I","uv":"5"}
+{"carrera":"Ingenieria Electrica","codigo":"MM-111","asignatura":"Geometria y Trigonometria","uv":"5"}
+{"carrera":"Ingenieria Electrica","codigo":"FF-101","asignatura":"Filosofia","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"SC-101","asignatura":"Sociologia","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IN-101","asignatura":"Idioma Extranjero I","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"MM-201","asignatura":"Calculo I","uv":"5"}
+{"carrera":"Ingenieria Electrica","codigo":"MM-211","asignatura":"Vectores y Matrices","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"QQ-100","asignatura":"Quimica Fundamental","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"DQ-101","asignatura":"Dibujo I","uv":"2"}
+{"carrera":"Ingenieria Electrica","codigo":"EG-011","asignatura":"Español General","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IN-102","asignatura":"Idioma Extranjero II","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"MM-202","asignatura":"Calculo II","uv":"5"}
+{"carrera":"Ingenieria Electrica","codigo":"MM-314","asignatura":"Programacion I","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"FS-100","asignatura":"Fisica General I","uv":"5"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-210","asignatura":"Introduccion A la Ingenieria Electrica","uv":"2"}
+{"carrera":"Ingenieria Electrica","codigo":"IN-103","asignatura":"Idioma Extranjero III","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"FS-200","asignatura":"Fisica General II","uv":"5"}
+{"carrera":"Ingenieria Electrica","codigo":"MM-411","asignatura":"Ecuaciones Diferenciales","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"HH-101","asignatura":"Historia de Honduras","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-221","asignatura":"Circuitos Electricos I","uv":"5"}
+{"carrera":"Ingenieria Electrica","codigo":"MM-401","asignatura":"Estadistica I","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"Elec-D","asignatura":"Electiva en Arte o Deporte","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"TM-324","asignatura":"Termodinamica I","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"MM-412","asignatura":"Analisis Numerico","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"FF-201","asignatura":"Logica Matematica","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"FS-321","asignatura":"Electricidad Y Magnetismo","uv":"5"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-321","asignatura":"Circuitos Elextricos II","uv":"5"}
+{"carrera":"Ingenieria Electrica","codigo":"OPT-CCNN","asignatura":"Optativa en campo de CC.NN","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"MM-502","asignatura":"Variable Compleja","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"FS-415","asignatura":"Electricidad y Magnetismo II","uv":"5"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-423","asignatura":"T. de la Probabilidad","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-313","asignatura":"Metodos Matematicos para Ingenieria","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-314","asignatura":"Electronica I","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-411","asignatura":"Organizacion y Metodos","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-414","asignatura":"Electronica II","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-415","asignatura":"Teoria de la Estabilidad","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-416","asignatura":"Electro,agnetismo","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-421","asignatura":"Maquinas Electricas","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"OPT","asignatura":"Optativa de Orientacion","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"II-421","asignatura":"Ingenieria de Metodos","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-515","asignatura":"T de sistemas lineales","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-425","asignatura":"Comunicaciones I","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-511","asignatura":"Maquinas Electricas","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-425","asignatura":"Comunicaciones I","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-511","asignatura":"Investigaciones de Operaciones","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"OPT3","asignatura":"OPTATIVA III","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"OPT4","asignatura":"OPTATIVA IV","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"OPT5","asignatura":"OPTATIVA V","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"OPT6","asignatura":"OPTATIVA VI","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-521","asignatura":"Ingenieria Econommica","uv":"3"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-524","asignatura":"Proyecto","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"IE-900","asignatura":"Seminario de Investigacion","uv":"4"}
+{"carrera":"Ingenieria Electrica","codigo":"OPT7","asignatura":"Optativa VII","uv":"4"}

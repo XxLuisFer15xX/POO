@@ -23,12 +23,13 @@
     <link rel="stylesheet" href="../../Libreria/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../Libreria/css/bootstrap-complements.css">
     <link rel="stylesheet" href="../../Libreria/css/estilos.css">
-
+    <link rel="stylesheet" href="../css/estilos.css">
     
     <link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
     <script src = "../../Libreria/js/jquery-3.3.1.min.js"></script>
     <script src = "../../Libreria/js/jquery.flexslider.js"></script>
     <script src = "../../Libreria/js/main.js"></script>
+    
 
     <style>
         .marketing .col-lg-3 {
@@ -96,6 +97,7 @@
                 right:0px;	
                 pointer-events: none;
         }
+            
     </style>
 
 </head>
@@ -119,7 +121,7 @@
                             while(($linea = fgets($archivo))){
                                 $registro = json_decode($linea,true);
                                 if ($valor == $registro["No_Cuenta"]){
-                                    echo    '
+                                    echo    '<p><b>No Cuenta:     </b>'.$registro['No_Cuenta'].'</p><hr style="border: 1.2px solid #FFCC00;">
                                              <p><b>Nombres:     </b>'.$registro['nombre'].'</p><hr style="border: 1.2px solid #FFCC00;">
                                              <p><b>Apellidos:   </b>'.$registro['apellido'].'</p><hr style="border: 1.2px solid #FFCC00;">
                                              <p><b>Rango Universitario:      </b>'.$registro["jerarquia"].'</p><hr style="border: 1.2px solid #FFCC00;">
@@ -131,6 +133,24 @@
                             }
                             fclose($archivo);
                     ?>
+                </div>
+                <div>
+                    <select name="cuenta" id="cuenta" style="display:none;">
+                    <?php
+                        $archivo = fopen("../../Formularios-Administracion/data/registro_alumno.json","r");
+                        while(($linea = fgets($archivo))){
+                            $registro = json_decode($linea,true);
+                            if ($valor == $registro["No_Cuenta"]){
+                                echo    '<option value='.$registro['No_Cuenta'].'></option">
+                                        ';  
+                                break;
+                            } 
+                        }
+                        fclose($archivo);
+                    ?>
+                    
+                    </select>
+                    
                 </div>
             </div>
         </div>
@@ -145,7 +165,7 @@
                               </div>
                               <!--contenido de la ventana-->
                                 <div class="modal-body" style="display:inline-block;">
-                                                
+                                        <div id="error"></div>
                                         <select name="carrera" id="carrera" class="caja">
                                             <option><?php
                                                 $archivo = fopen("../../Formularios-Administracion/data/registro_alumno.json","r");
@@ -153,7 +173,7 @@
                                                     $registro = json_decode($linea,true);
                                                     if ($valor == $registro["No_Cuenta"]){
                                                         echo    '
-                                                                 <p><b>Carrera:   </b>'.$registro['carrera'].'</p><hr style="border: 1.2px solid #FFCC00;">
+                                                                 <p>'.$registro['carrera'].'</p><hr style="border: 1.2px solid #FFCC00;">
                                                                 ';  
                                                         break;
                                                     } 
@@ -172,26 +192,85 @@
                                                     $registro = json_decode($linea,true);
                                                     //if ($valor == $registro["No_Cuenta"]){
                                                         echo    '
-                                                                 <option>'.$registro['codigo'] . " " . $registro['asignatura'].'</option>
+                                                                 <option value='.$registro['codigo'] .'>'.$registro['asignatura'].'</option>
                                                                 ';  
+                                                               
                                                         //break;
                                                     //} 
                                                 }
                                                 fclose($archivo);
                                             ?>
+
                                             <script>
-                                            
+                                                var select = document.getElementById('asignatura');
+                                                select.addEventListener('change',
+                                                function(){
+                                                    var selectedOption = this.options[select.selectedIndex];
+                                                    console.log(selectedOption.value + ': ' + selectedOption.text);
+                                                    var miVariable = selectedOption.text;
+                                                    document.cookie ='variable='+miVariable+'; expires=Thu, 2 Aug 2021 20:47:11 UTC; path=/';
+                                                });
+                                                
                                             </script>
+
+
                                         </select>
                                                     
                                         <select name="horario" id="horario" class="caja">
                                                 <option>Horarios</option>
+                                                <?php
+                                                $miVariable =  $_COOKIE["variable"];
+                                                echo $miVariable;
+                                                $archivo = fopen("../../Formularios-Jefes-Departamento/data/registro-seccion.json","r");
+                                                while(($linea = fgets($archivo))){
+                                                    
+                                                    $registro = json_decode($linea,true);
+                                                        echo    '
+                                                            <option value='.$registro['aula'].'>'."HI".$registro['horainicial']."HF".$registro['horafinal']."Aula".$registro['aula'].'</option>
+                                                       ';
+                                                }
+                                                fclose($archivo); 
+                                            ?>
+
                                         </select>     
                                 </div>
                                 <!--Footer-->
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Guardar Informacion</button>
+                                    <button type="button" id="btn-guardar-informacion" class="btn btn-primary">Guardar Informacion</button>
+                                    <script>
+                                        $("#btn-guardar-informacion").click(function(){
+                                            var parametros=`No_Cuenta=${$("#cuenta").val()}&carrera=${$("#carrera").val()}&codigo=${$("#asignatura").val()}&aula=${$("#horario").val()}`;
+                                            console.log(parametros);
+                                            $.ajax({
+                                                url:"../ajax/matricula.php",
+                                                method:"GET",
+                                                data:parametros,
+                                                dataType:"json",
+                                                succes:function(respuesta){
+                                                    console.log(respuesta);
+                                                },
+                                                error:function(error){
+                                                    console.error(error);
+                                                    $("#error").append(error.responseText);
+                                                }
+                                            });
+                                                    var mensajeModal = '<div class="modal_wrap">'+
+                                                                            '<div class="mensaje_modal">'+
+                                                                                '<h2 style="text-align:center;">Seccion Matriculada Exitosamente</h2>'+
+                                                                                '<h2>UNAH-DIPP</h2>'+
+                                                                                '<span id="btnClose">Finalizar</span>'+
+                                                                            '</div>'+
+                                                                        '</div>'
+
+                                                    $('body').append(mensajeModal);
+                                                    
+                                                    // CERRANDO MODAL ==============================
+                                                    $('#btnClose').click(function(){
+                                                        window.location.href = "Matricula-Alumno.php";
+                                                    });
+                                        });
+                                    </script>
                             </div>
                         </div>
                    </div>
@@ -202,12 +281,17 @@
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12" style = "text-align:center;">
               <h2>Adicionar Asignatura</h2>
               <img class="rounded-circle" src="../../Libreria/img/libros.jpg" alt="Generic placeholder image" width="140" height="140">
-              <p style = "margin-top: 10px;"><a class="btn btn-secondary" href="#ventana1" role="button" data-toggle="modal">Adicionar Asignatura</a></p>
+              <p style = "margin-top: 10px; "><a class="btn btn-secondary" href="#ventana1" role="button" data-toggle="modal">Adicionar Asignatura</a></p>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12" style = "text-align:center;">
               <h2>Cancelar Asignatura</h2>
               <img class="rounded-circle" src="../../Libreria/img/cancelar.jpg" alt="Generic placeholder image" width="140" height="140">
               <p style = "margin-top: 10px;"><a class="btn btn-secondary" href="#modal1" role="button">Cancelar Asignatura</a></p>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12" style = "text-align:center;">
+              <h2>Forma 03</h2>
+              <img class="rounded-circle" src="../../Libreria/img/matricula(1).png" alt="Generic placeholder image" width="140" height="140">
+              <p style = "margin-top: 50px;"><a class="btn btn-secondary" href="forma03.php" role="button">Ver Forma 03</a></p>
             </div>
           </div>
     </div>

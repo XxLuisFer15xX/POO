@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="../Libreria/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Libreria/css/bootstrap-complements.css">
     <link rel="stylesheet" href="../Libreria/css/estilos.css">
+    
+    
 
     
     <link href="https://fonts.googleapis.com/css?family=K2D:200,400,700" rel="stylesheet" >
@@ -124,7 +126,7 @@
                 <h2>Creacion de Secciones</h2>
                 <img class="rounded-circle" src="../Libreria/img/secciones.jpg" alt="Generic placeholder image" width="140" height="140">
                 <p style = "margin-top: 20px;"><br>Aqui se podra crear una seccion con su debido catedratico en una asignatura especifica y cantidad de cupos solicitados.</p>
-                <p style = "margin-top: 50px;"><a class="btn btn-secondary" href="#" role="button">Cancelar Asignaturas</a></p>
+                <p style = "margin-top: 50px;"><a class="btn btn-secondary" href="Formularios/Formulario-Creacion-Secciones.php" role="button">Cancelar Asignaturas</a></p>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" style = "text-align:center;">
                 <h2>Eliminacion De Secciones</h2>
