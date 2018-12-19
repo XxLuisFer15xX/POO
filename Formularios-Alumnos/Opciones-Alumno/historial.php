@@ -107,16 +107,16 @@
           <div class="tab-content " id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
                 <table class="table table-bordered table-sm table-hover  ">
-                <thead>
+                <thead style="backgrpund-color:rgba(0,36,132,0.6);">
                   <tr style="color:black;">
-                  <th scope="col" style="color:black;">Codigo</th>
-                  <th scope="col" style="color:black;">Asignatura</th>
-                  <th scope="col" style="color:black;">UV</th>
-                  <th scope="col" style="color:black;">Seccion</th>
-                  <th scope="col" style="color:black;">Año</th>
-                  <th scope="col" style="color:black;">Periodo</th>
-                  <th scope="col" style="color:black;">Calificacion</th>
-                  <th scope="col" style="color:black;">OBS</th>
+                  <th scope="col" style="color:white;">Codigo</th>
+                  <th scope="col" style="color:white;">Asignatura</th>
+                  <th scope="col" style="color:white;">UV</th>
+                  <th scope="col" style="color:white;">Seccion</th>
+                  <th scope="col" style="color:white;">Año</th>
+                  <th scope="col" style="color:white;">Periodo</th>
+                  <th scope="col" style="color:white;">Calificacion</th>
+                  <th scope="col" style="color:white;">OBS</th>
                   </tr>
                 </thead>
                 <?php
@@ -130,22 +130,24 @@
                                       $registro2=json_decode($linea2,true);
                                         if($var2==$registro2['codigo']){
                                           echo '<tbody style="color:black;">
-                                            <tr>
+                                            <tr style="color:white;">
                                               <th scope="row">1</th>
                                               <td>'.$registro2['asignatura'].'</td>
                                               <td>'.$registro2['uv'].'</td>
                                               <td>'.$registro2['seccion'].'</td>
-                                              <td></td>
+                                              <td>'.$registro2['anio'].'</td>
                                               <td>'.$registro2['periodo'].'</td>
                                               <td></td>
                                               <td>'.$registro2['obs'].'</td>
-                                            </tr>';
+                                            </tr>
+                                            </tbody>';
                                        }
                                    }
                                 }
                             }
                             fclose($archivo);
                     ?>
+                  
                   </table>
                   <nav aria-label="Page navigation example">
                       <ul class="pagination">

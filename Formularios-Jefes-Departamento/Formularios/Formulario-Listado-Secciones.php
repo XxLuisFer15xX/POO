@@ -40,13 +40,13 @@
 	<main role="main">
 
 		<section class="content-form">
-			<h1 style="text-align: center;">Registro Asignaturas UNAH</h1>
+			<h1 style="text-align: center;">Listado Asignaturas UNAH</h1>
 			<h2 class="sub-title">Datos Generales</h2>
 
 			<form>
 			
 				<div class="form-group width-12">
-						<h3 class="sub-form" style="text-align: center;">Carrera a asignar Clases:</h3>
+						<h3 class="sub-form" style="text-align: center;">Secciones en las que imparte clases:</h3>
 					<div class="width-12">
 						<select name="carrera" id="carrera" style="background: #fff; border: none; font-size: 14px; height: 38px; padding: 5px; width:760px; left:3px;">
 							<option value="">Seleccione</option>

@@ -6,13 +6,16 @@
         private $asignatura;
         private $horainicial;
         private $horafinal;
+        private $periodo;
+        private $anio;
         private $docente;
         private $edificio;
         private $aula;
         private $dias;
-        
+        private $uv;
+        private $obs;
 
-        public function __construct($carrera=null,$codigo=null,$seccion=null,$asignatura=null,$horainicial=null,$horafinal=null,$docente=null,$edificio=null,$aula=null,$dias=null,$periodo=null,$uv=null,$obs=null){
+        public function __construct($carrera=null,$codigo=null,$seccion=null,$asignatura=null,$horainicial=null,$horafinal=null,$docente=null,$edificio=null,$aula=null,$dias=null,$periodo=null,$anio=null,$uv=null,$obs=null){
             $this->carrera=$carrera;
             $this->codigo=$codigo;
             $this->seccion=$seccion;
@@ -26,6 +29,7 @@
             $this->periodo=$periodo;
             $this->uv=$uv;
             $this->obs=$obs;
+            $this->anio=$anio;
         }
         public function getcarrera(){
             return $this->carrera;
@@ -105,6 +109,12 @@
         public function setobs($obs){
             $this->obs=$obs;
         }
+        public function getanio(){
+            return $this->anio;
+        }
+        public function setanio($anio){
+            $this->anio=$anio;
+        }
         public function Registrar_Seccion(){
             $archivo = fopen("../data/registro-seccion.json","a+");
             $arreglo = array();
@@ -121,6 +131,7 @@
             $arreglo["periodo"]=$this->periodo;
             $arreglo["uv"]=$this->uv;
             $arreglo["obs"]=$this->obs;
+            $arreglo["anio"]=$this->anio;
             
 
             fwrite($archivo,json_encode($arreglo) ."\n");
@@ -128,7 +139,7 @@
             return json_encode($arreglo);
         }
         public function __toString(){
-            return "$this->carrera,$this->asignatura,$this->seccion,$this->horainicial,$this->horafinal,$this->docente,$this->edificio,$this->aula,$this->dias,$this->periodo,$this->uv,$this->obs";
+            return "$this->carrera,$this->asignatura,$this->seccion,$this->horainicial,$this->horafinal,$this->docente,$this->edificio,$this->aula,$this->dias,$this->periodo,$this->uv,$this->obs,$this->anio";
         }
 
     }
