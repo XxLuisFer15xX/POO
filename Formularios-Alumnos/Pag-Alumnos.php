@@ -108,7 +108,7 @@
               <h2>Historial Academico</h2>
               <img class="rounded-circle" src="../Libreria/img/Historial.jpg" alt="Generic placeholder image" width="140" height="140">
               <p style = "margin-top: 20px;">Puedes ver tu historial académico</p>
-              <p style = "margin-top: 55px;"><a class="btn btn-secondary" href="#" role="button">Historial académico</a></p>
+              <p style = "margin-top: 55px;"><a class="btn btn-secondary" href="Opciones-Alumno/historial.php" role="button">Historial académico</a></p>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12" style = "text-align:center;">
               <h2>Solicitudes</h2>

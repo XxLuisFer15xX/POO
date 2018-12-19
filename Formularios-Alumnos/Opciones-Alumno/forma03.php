@@ -177,9 +177,11 @@
 
                     <tbody>
                 </table>
-                <input type="button" class = "btn btn-secondary" onclick="location.href='Matricula-Alumno.php'" value="regresar">
+                
                 </div>
+                
         </div>
+        <input type="button" class = "btn btn-primary" onclick="location.href='Matricula-Alumno.php'" value="regresar">
     </div>
 
   
@@ -191,6 +193,6 @@
     <script src="../../Libreria/js/jquery-latest.js"></script>
     <script src="../../Libreria/js/bootstrap.min.js"></script>
     <script src="../../Libreria/header.js"></script>
-    <script src="../../Libreria/footer.js"></script>
+,    <script src="../../Libreria/footer.js"></script>
 </body>
 </html>
