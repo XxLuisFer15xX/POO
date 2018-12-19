@@ -69,13 +69,13 @@
                                         <th scope="row">Nombre:</th>
                                         <td>'.$registro['nombre'].' '.$registro['apellido'].'</td>
                                         <th scope="row" >Indice de Periodo:</th>
-                                        <td>'.$registro['centro'].'</td>
+                                        <td>78</td>
                                       </tr>
                                       <tr>
                                         <th scope="row">Cuenta:</th>
                                         <td>'.$registro['No_Cuenta'].'</td>
                                         <th scope="row" >Indice de Global:</th>
-                                        <td>'.$registro['centro'].'</td>
+                                        <td>83</td>
                                         
                                       </tr>
                                     </tbody>';
@@ -137,7 +137,7 @@
                                               <td>'.$registro2['seccion'].'</td>
                                               <td>'.$registro2['anio'].'</td>
                                               <td>'.$registro2['periodo'].'</td>
-                                              <td></td>
+                                              <td>85</td>
                                               <td>'.$registro2['obs'].'</td>
                                             </tr>
                                             </tbody>';

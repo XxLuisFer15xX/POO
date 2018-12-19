@@ -18,6 +18,13 @@
 	}
 	
 ?>
+<?php 
+    session_start();  
+    if (!isset($_SESSION["No_Cuenta"]))
+        header("Location: no-autorizado.html");//Redireccion con PHP
+        $valor=$_SESSION["No_Cuenta"];
+     
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,21 +55,51 @@
 				<div class="form-group width-12">
 						<h3 class="sub-form" style="text-align: center;">Secciones en las que imparte clases:</h3>
 					<div class="width-12">
-						<select name="carrera" id="carrera" style="background: #fff; border: none; font-size: 14px; height: 38px; padding: 5px; width:760px; left:3px;">
+						<select name="codigo" id="codigo" style="background: #fff; border: none; font-size: 14px; height: 38px; padding: 5px; width:760px; left:3px;">
 							<option value="">Seleccione</option>
 							<?php
-								$archivo = fopen("../data/carreras.json","r");
+								$archivo = fopen("../data/registro-seccion.json","r");
 								while(($linea = fgets($archivo))){
 									$registro = json_decode($linea,true);
-									
-									echo    '
-											<option value='.$registro['carrera'].'>'.$registro['carrera'] .'</option>
-											'; 
+									if($valor==$registro['docente']){
+										echo    '
+											<option value='.$registro['codigo'].'>'.$registro['asignatura'].'</option>
+											';
 											
-												
+									}
+									$valor_2 = $registro['codigo'];
 								}
-								$valor=$registro['carrera'];	
+								
+									
 							?>
+						</select>
+					</div>  
+				</div>
+				<div class="form-group width-12">
+						<h3 class="sub-form" style="text-align: center;">Secciones en las que imparte clases:</h3>
+					<div class="width-12">
+						<table>
+							<thead>
+								<th style="background-color:white; color:black; width:370px; heigth:30px;">No_Cuenta</th>
+								<th style="background-color:white; color:black; width:370px; heigth:30px;">Codigo Asignatura</th>
+							</thead>
+							<tbody id="No_Cuenta">
+							<?php
+								$a =  fopen("../data/registro-seccion.json","r");
+								$archivo = fopen("../../Formularios-Alumnos/data/registro_matricula.json","r");
+								while(($linea = fgets($archivo))){
+									$registro = json_decode($linea,true);
+									if($valor_2==$registro['codigo']){
+											echo    '
+												<tr><td style="background-color:white; color:black; width:370px; heigth:30px;">'.$registro['No_Cuenta'].'</td></tr>
+											'; 
+									}			
+											
+								}
+									
+							?>
+							</tbody>
+						</table>
 						</select>
 					</div>  
 				</div>
@@ -133,9 +170,10 @@
 								$archivo = fopen("../../Formularios-Administracion/data/registro_docente.json","r");
 								while(($linea = fgets($archivo))){
 									$registro = json_decode($linea,true);
+									if($keys==$registro['docente'])
 									
 									echo    '
-											<option value='.$registro['No_Cuenta'].'>'.$registro['nombre']." ".$registro['apellido'] .'</option>
+											<option value='.$registro['codigo'].'>'.$registro['seccion'].'</option>
 											'; 			
 								}
 									

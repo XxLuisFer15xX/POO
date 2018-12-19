@@ -108,7 +108,7 @@
               <h2>Lista de Secciones</h2>
               <img class="rounded-circle" src="../Libreria/img/Listado.jpg" alt="Generic placeholder image" width="140" height="140">
               <p style = "margin-top: 20px;">Aqui puedes ver Las secciones en la que Impartes Clases</p>
-              <p style = "margin-top: 57px;"><a class="btn btn-secondary" href="#" role="button">Lista De Secciones</a></p>
+              <p style = "margin-top: 57px;"><a class="btn btn-secondary" href="Formularios/Formulario-Listado-Secciones.php" role="button">Lista De Secciones</a></p>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" style = "text-align:center;">
                 <h2>Cambio de Clave</h2>
